@@ -13,6 +13,7 @@ const ModelViewer = function(props) {
                 src={props.glb}
                 ios-src={props.usdz}
                 poster={props.placeholderImage}
+                ar
                 ar-modes="webxr scene-viewer quick-look"
                 ar-scale="auto"
                 background-color="#f6ffe3"
