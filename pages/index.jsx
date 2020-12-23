@@ -10,9 +10,6 @@ export default function Home() {
   return (
 
     <div className={styles.container}>
-      {
-        Head.setHeader("Access-Control-Allow-Headers", "X-Requested-With, content-type")
-      }
       <div>
         {/*musuem anme*/}
         <h1>LOWE</h1>
