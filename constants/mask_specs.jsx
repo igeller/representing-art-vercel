@@ -8,8 +8,8 @@ const masks = [
             linkToMaskDetails:"/mask_gallery/mask1"
         },
         model: {
-            gltf:"https://github.com/igeller/assets/blob/main/punu-people-ceremonial-dance-mask%20copy/scene.glb",
-            usdz:"https://ufile.io/fj0ny34k",
+            glb:"https://cors-anywhere.herokuapp.com/https://github.com/igeller/assets/blob/main/punu-people-ceremonial-dance-mask%20copy/scene.glb?raw=true",
+            usdz:"https://cors-anywhere.herokuapp.com/https://github.com/igeller/assets/blob/main/punu-people-ceremonial-dance-mask%20copy/Punu_People_Ceremonial_Dance_Mask.usdz?raw=true",
             placeholder:"https://representingart.imfast.io/kulango-people-ceremonial-dance-mask/textures/KulangaMaskMesh.png",
         },
         details: {

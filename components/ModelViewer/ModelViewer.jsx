@@ -10,7 +10,7 @@ const ModelViewer = function(props) {
                 <script noModule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
             </Head>
             <model-viewer
-                src={props.gltf}
+                src={props.glb}
                 ios-src={props.usdz}
                 poster={props.placeholderImage}
                 ar-modes="webxr scene-viewer quick-look"
@@ -28,7 +28,7 @@ const ModelViewer = function(props) {
 
 
 ModelViewer.propTypes={
-    gltf: PropTypes.string.isRequired,
+    glb: PropTypes.string.isRequired,
     usdz: PropTypes.string.isRequired,
     placeholder: PropTypes.string.isRequired
 }

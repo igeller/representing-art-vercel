@@ -13,7 +13,7 @@ const MaskInfoView = (props) => {
         <div>
             <h1>Mask Name</h1>
             <ModelViewer
-                gltf={masks[props.queryParam].model.gltf}
+                glb={masks[props.queryParam].model.glb}
                 usdz={masks[props.queryParam].model.usdz}
                 placeholder={masks[props.queryParam].model.placeholder}
             />
