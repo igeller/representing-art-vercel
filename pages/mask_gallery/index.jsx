@@ -14,6 +14,7 @@ export default function index() {
                   linkToMaskDetails={masks[0].card.linkToMaskDetails}
                   maskNumber={0}
               />
+                {console.log('******', masks[1])}
                 <MaskGalleryCards
                     imagePosition={masks[1].card.imagePositon}
                     imageSrc={masks[1].card.imageSrc}
