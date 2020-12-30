@@ -8,7 +8,7 @@ const MaskGalleryCards = (props) =>{
     return(
         <Card>
             <Card.Img variant={props.imagePosition} src={props.imageSrc}/>
-            <Link href={{ pathname: props.linkToMaskDetails, query: { name: props.maskNum }}}>
+            <Link href={{ pathname: props.linkToMaskDetails, query: { maskNumber: props.maskNumber }}}>
                 <a className="btn btn-primary stretched-link">Learn More</a>
             </Link>
         </Card>
@@ -20,7 +20,7 @@ MaskGalleryCards.propTypes = {
     imagePosition: PropTypes.string.isRequired,
     imageSrc: PropTypes.string.isRequired,
     linkToMaskDetails: PropTypes.string.isRequired,
-    maskNum: PropTypes.number.isRequired
+    maskNumber: PropTypes.number.isRequired
 };
 
 

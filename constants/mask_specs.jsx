@@ -2,6 +2,8 @@ const masks = [
     {
         name: "mask1",
         number: 0,
+        next: 1,
+        previous: 1,
         card: {
             imagePositon: "top",
             imageSrc: "https://media.istockphoto.com/photos/-picture-id1206385911?k=6&m=1206385911&s=612x612&w=0&h=PKSUrhryd1qe3z_2LdxCumH7BgWE1jTk0bnY-BHs7OM=",
@@ -19,6 +21,8 @@ const masks = [
     {
         name: "mask2",
         number: 1,
+        next: 0,
+        previous: 0,
         model: {
             gltf:"https://representingart.imfast.io/punu/scene.gltf",
             usdz:"https://representingart.imfast.io/punu/Punu_People_Ceremonial_Dance_Mask.usdz",

@@ -12,13 +12,13 @@ export default function index() {
                   imagePosition={masks[0].card.imagePositon}
                   imageSrc={masks[0].card.imageSrc}
                   linkToMaskDetails={masks[0].card.linkToMaskDetails}
-                  maskNum={masks[0].number}
+                  maskNumber={0}
               />
                 <MaskGalleryCards
-                    imagePosition={masks[0].card.imagePositon}
-                    imageSrc={masks[0].card.imageSrc}
-                    linkToMaskDetails={masks[0].card.linkToMaskDetails}
-                    maskNum={masks[0].number}
+                    imagePosition={masks[1].card.imagePositon}
+                    imageSrc={masks[1].card.imageSrc}
+                    linkToMaskDetails={masks[1].card.linkToMaskDetails}
+                    maskNumber={1}
 
                 />
             </CardGroup>
