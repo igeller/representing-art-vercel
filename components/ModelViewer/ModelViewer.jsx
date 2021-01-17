@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const ModelViewer = function(props) {
     return(
-        <div>
+        <>
             <Head>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
                 <script noModule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
@@ -22,10 +22,10 @@ const ModelViewer = function(props) {
                 auto-rotate
                 camera-controls
             />
-        </div>
+        </>
 
     )
-}
+};
 
 
 ModelViewer.propTypes={

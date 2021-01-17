@@ -10,16 +10,18 @@ import ModelViewer from "../ModelViewer/ModelViewer";
 const MaskInfoView = (props) => {
 
     return(
-        <div>
-
-            <h1>Mask Name</h1>
+        <>
+            <h1>{props.maskOBJ.name}</h1>
             <ModelViewer
                 glb={props.maskOBJ.model.glb}
                 usdz={props.maskOBJ.model.usdz}
                 placeholder={props.maskOBJ.model.placeholder}
             />
-            <MobileMaskMenu maskNum={props.maskOBJ.number}/>
-        </div>
+            <MobileMaskMenu
+                nextMask={props.maskOBJ.next}
+                previousMask={props.maskOBJ.previous}
+                maskDetails={props.maskOBJ.details}/>
+        </>
     )
 }
 

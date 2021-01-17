@@ -7,8 +7,8 @@ import Link from 'next/link';
 const MaskGalleryCards = (props) =>{
     return(
         <Card>
-            <Card.Img variant={props.imagePosition} src={props.imageSrc}/>
-            <Link href={{ pathname: props.linkToMaskDetails, query: { maskNumber: props.maskNumber }}}>
+            <Card.Img variant={props.maskOBJ.card.imagePosition} src={props.maskOBJ.card.imageSrc}/>
+            <Link href={{ pathname: props.maskOBJ.card.linkToMaskDetails, query: { maskNumber: props.maskOBJ.id }}}>
                 <a className="btn btn-primary stretched-link">Learn More</a>
             </Link>
         </Card>
@@ -17,10 +17,7 @@ const MaskGalleryCards = (props) =>{
 }
 
 MaskGalleryCards.propTypes = {
-    imagePosition: PropTypes.string.isRequired,
-    imageSrc: PropTypes.string.isRequired,
-    linkToMaskDetails: PropTypes.string.isRequired,
-    maskNumber: PropTypes.number.isRequired
+    maskOBJ: PropTypes.object.isRequired,
 };
 
 

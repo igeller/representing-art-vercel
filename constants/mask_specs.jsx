@@ -1,37 +1,56 @@
 const masks = [
     {
-        name: "mask1",
-        number: 0,
+        name: "Punu Ceremonial Dance Mask",
+        id: 0,
         next: 1,
         previous: 1,
         card: {
             imagePositon: "top",
-            imageSrc: "https://media.istockphoto.com/photos/-picture-id1206385911?k=6&m=1206385911&s=612x612&w=0&h=PKSUrhryd1qe3z_2LdxCumH7BgWE1jTk0bnY-BHs7OM=",
+            imageSrc: "https://media.sketchfab.com/models/2acb5e8977274d64ac9eda36e9b9b5c9/thumbnails/17310282d2d849c9bb5f4af9c50a0837/077420119d44427b9c7ea9906a03fe4d.jpeg",
             linkToMaskDetails:"/mask_gallery/mask1"
         },
         model: {
-            glb:"https://cors-anywhere.herokuapp.com/https://github.com/igeller/assets/blob/main/punu-people-ceremonial-dance-mask%20copy/scene.glb?raw=true",
-            usdz:"https://cors-anywhere.herokuapp.com/https://github.com/igeller/assets/blob/main/punu-people-ceremonial-dance-mask%20copy/Punu_People_Ceremonial_Dance_Mask.usdz?raw=true",
-            placeholder:"https://representingart.imfast.io/kulango-people-ceremonial-dance-mask/textures/KulangaMaskMesh.png",
+            glb:"https://cors-anywhere.herokuapp.com/https://representingart.stdcdn.com/punu/punu.glb",
+            usdz:"https://representingart.stdcdn.com/punu/Punu_People_Ceremonial_Dance_Mask.usdz",
+            placeholder:"https://media.sketchfab.com/models/2acb5e8977274d64ac9eda36e9b9b5c9/thumbnails/17310282d2d849c9bb5f4af9c50a0837/077420119d44427b9c7ea9906a03fe4d.jpeg",
         },
         details: {
 
         }
     },
     {
-        name: "mask2",
-        number: 1,
+        name: "Lega People Bwami Society Ran Mask",
+        id: 1,
         next: 0,
         previous: 0,
         card: {
             imagePositon: "top",
-            imageSrc: "https://media.istockphoto.com/photos/-picture-id1206385911?k=6&m=1206385911&s=612x612&w=0&h=PKSUrhryd1qe3z_2LdxCumH7BgWE1jTk0bnY-BHs7OM=",
+            imageSrc: "https://media.sketchfab.com/models/35df7b6d9fd94472865d75b3520b5b4e/thumbnails/c5fe2da186884db388987d7106e0eb51/c590040fdb7d4573ba0ff92dddd776c9.jpeg",
             linkToMaskDetails:"/mask_gallery/mask1"
         },
         model: {
-            gltf:"https://representingart.imfast.io/punu/scene.gltf",
-            usdz:"https://representingart.imfast.io/punu/Punu_People_Ceremonial_Dance_Mask.usdz",
-            placeholder:"https://representingart.imfast.io/kulango-people-ceremonial-dance-mask/textures/KulangaMaskMesh.png",
+            glb:"https://representingart.stdcdn.com/lega/Lega_People_Bwami_Society_Rank_Mask.glb",
+            usdz:"https://representingart.stdcdn.com/lega/Lega_People_Bwami_Society_Rank_Mask.usdz",
+            placeholder:"https://media.sketchfab.com/models/35df7b6d9fd94472865d75b3520b5b4e/thumbnails/c5fe2da186884db388987d7106e0eb51/c590040fdb7d4573ba0ff92dddd776c9.jpeg",
+        },
+        details: {
+
+        }
+    },
+    {
+        name: "Senufo People Kepele Ceremonial Dance Mask",
+        id: 2,
+        next: 0,
+        previous: 0,
+        card: {
+            imagePositon: "top",
+            imageSrc: "https://media.sketchfab.com/models/35df7b6d9fd94472865d75b3520b5b4e/thumbnails/c5fe2da186884db388987d7106e0eb51/c590040fdb7d4573ba0ff92dddd776c9.jpeg",
+            linkToMaskDetails:"/mask_gallery/mask1"
+        },
+        model: {
+            glb:"https://representingart.stdcdn.com/lega/Lega_People_Bwami_Society_Rank_Mask.glb",
+            usdz:"https://representingart.stdcdn.com/lega/Lega_People_Bwami_Society_Rank_Mask.usdz",
+            placeholder:"https://media.sketchfab.com/models/35df7b6d9fd94472865d75b3520b5b4e/thumbnails/c5fe2da186884db388987d7106e0eb51/c590040fdb7d4573ba0ff92dddd776c9.jpeg",
         },
         details: {
 

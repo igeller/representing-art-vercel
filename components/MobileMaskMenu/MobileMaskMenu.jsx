@@ -1,49 +1,52 @@
 import React from "react";
 import {useState} from "react";
 import PropTypes from "prop-types";
-import {ButtonGroup, Button} from "react-bootstrap";
+import {ButtonGroup, Button, Modal} from "react-bootstrap";
+import Link from "next/link";
+import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
+import Head from "next/head";
+import MapModal from "../MapModal/MapModal";
+
 
 const MobileMaskMenu = (props) => {
     // const [maskNum, setMaskNum] = useState(props.maskNum);
+
 
     const menustyle ={
         position: "absolute",
         bottom: "0px",
     };
 
-    function goToPreviousMask(currentMask){
-        // console.log("clicked previous!")
-        return currentMask-1
-    }
-    function goToNextMask(currentMask){
-        return currentMask+1
-    }
-    function getInfo(currentMask){
-    }
-    function openARView(currentMask){
-        return currentMask-1
-    }
-    function openMapView(currentMask){
-    }
+    const [showMap, setShowMap] = useState(false);
+    const [showInfo, setShowInfo] = useState(false);
+
+
     return(
-        <div>
-            {/*{console.log(maskNum)}*/}
+        <>
             <ButtonGroup aria-label="" style={menustyle} >
-                <Button onClick={goToPreviousMask} >Last Mask</Button>
-                <Button variant="secondary">more info</Button>
-                <Button variant="secondary">ar view</Button>
-                <Button variant="secondary">map view</Button>
-                <Button variant="secondary">next mask</Button>
+                <Link href={{ query: { maskNumber: props.previousMask }}}>
+                    <a className="btn btn-primary stretched-link">Last Mask</a>
+                </Link>
 
-
+                <Button variant="primary" onClick={() => setShowInfo(true)}>More Info</Button>
+                <Button variant="primary" onClick={() => setShowMap(true)}>Map View</Button>
+                <Link href={{ query: { maskNumber: props.previousMask }}}>
+                    <a className="btn btn-primary stretched-link">Next Mask</a>
+                </Link>
             </ButtonGroup>
-        </div>
+
+            <MapModal openMapModal={showMap} closeMapModal={() => setShowMap(false)}/>
+
+        </>
 
     )
 }
 
 MobileMaskMenu.propTypes = {
-    maskNum: PropTypes.number.isRequired
+    nextMask: PropTypes.number.isRequired,
+    previousMask: PropTypes.number.isRequired,
+    maskDetails: PropTypes.object.isRequired
 }
 
 export default MobileMaskMenu;
