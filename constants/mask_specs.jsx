@@ -15,7 +15,13 @@ const masks = [
             placeholder:"https://media.sketchfab.com/models/2acb5e8977274d64ac9eda36e9b9b5c9/thumbnails/17310282d2d849c9bb5f4af9c50a0837/077420119d44427b9c7ea9906a03fe4d.jpeg",
         },
         details: {
-
+            group: 'Kom People',
+            groupLocation: 'Cameroon',
+            itemName: 'Helmet Crest Mask',
+            itemCreation: 'Early 20th Century',
+            medium: 'Wood, cotton, hair, plant fiber, raffia, paint and kaolin',
+            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+            providedBy: 'Gift of Alan Potamkin'
         }
     },
     {

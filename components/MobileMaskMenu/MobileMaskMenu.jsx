@@ -7,6 +7,7 @@ import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Head from "next/head";
 import MapModal from "../MapModal/MapModal";
+import InfoModal from "../InfoModal/InfoModal";
 
 
 const MobileMaskMenu = (props) => {
@@ -37,6 +38,17 @@ const MobileMaskMenu = (props) => {
             </ButtonGroup>
 
             <MapModal openMapModal={showMap} closeMapModal={() => setShowMap(false)}/>
+            <InfoModal
+                openInfoModal={showInfo}
+                closeInfoModal={() => setShowInfo(false)}
+                group={props.maskDetails.group}
+                groupLocation={props.maskDetails.groupLocation}
+                itemName={props.maskDetails.itemName}
+                itemCreation={props.maskDetails.itemCreation}
+                medium={props.maskDetails.medium}
+                description={props.maskDetails.description}
+            />
+
 
         </>
 
