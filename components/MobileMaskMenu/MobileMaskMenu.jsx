@@ -3,9 +3,7 @@ import {useState} from "react";
 import PropTypes from "prop-types";
 import {ButtonGroup, Button, Modal} from "react-bootstrap";
 import Link from "next/link";
-import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import Head from "next/head";
 import MapModal from "../MapModal/MapModal";
 import InfoModal from "../InfoModal/InfoModal";
 
@@ -25,7 +23,7 @@ const MobileMaskMenu = (props) => {
 
     return(
         <>
-            <ButtonGroup aria-label="" style={menustyle} >
+            <ButtonGroup style={menustyle} className={'w-100'}>
                 <Link href={{ query: { maskNumber: props.previousMask }}}>
                     <a className="btn btn-primary stretched-link">Last Mask</a>
                 </Link>

@@ -5,12 +5,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import MobileMaskMenu from "../MobileMaskMenu/MobileMaskMenu";
 import ModelViewer from "../ModelViewer/ModelViewer";
+import MenuBar from "../MenuBar/MenuBar";
 
 
 const MaskInfoView = (props) => {
 
     return(
         <>
+            <MenuBar backLink={'/mask_gallery/'}/>
             <h1>{props.maskOBJ.name}</h1>
             <ModelViewer
                 glb={props.maskOBJ.model.glb}
