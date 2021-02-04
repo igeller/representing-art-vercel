@@ -10,36 +10,16 @@ export default function Home() {
 
     <div className={styles.container}>
       <div>
-        {/*musuem anme*/}
-        <h1>LOWE</h1>
-        <img src={"https://github.com/igeller/assets/blob/main/Assets/Mobile/Logos/Africa-Mobile-Logo-Lowe.png?raw=true"} />
-        {/*//Project Name*/}
-        <h2>RE-PRESENTING ART</h2>
-        {/*info about project*/}
-        <p>A Holographic Installation for the Lowe Art of Africa Gallery Collections</p>
-        {/*//button to link to gallery*/}
+        <img className={'loweLogo w-50 d-block mx-auto position-absolute mt-5'}/>
+        <h2 className={'mt-5'}>RE-PRESENTING ART</h2>
+          <p className={'mx-auto my-3 font-italic'}>
+            A Holographic Installation<br/>
+            for the Lowe Art of<br/>
+            Africa Gallery Collections</p>
         <Link href={'mask_gallery/'}>
-          <Button variant={'primary'}>ENTER GALLERY</Button>
+          <Button className={`${styles.btn} mt-5 text-wrap badge-pill btn-lg px-5 py-2`}>View Gallery</Button>
         </Link>
-
-
-        {/*<Gallery images={IMAGES} enableImageSelection={false} onClickThumbnail={show3dobs}/>*/}
-        {/*<model-viewer src={"https://representingart.imfast.io/punu/scene.gltf"} loading="eager" poster="https://representingart.imfast.io/kulango-people-ceremonial-dance-mask/textures/KulangaMaskMesh.png" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls/>*/}
-
       </div>
-      {/*<Gallery></Gallery>*/}
-
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
 }

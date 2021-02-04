@@ -1,6 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-
 html,
 body {
   padding: 0;
@@ -9,10 +8,35 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: #1E1C1C;
   color: white;
+  text-align: center;
+
   background-image: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Top.png?raw=true"), url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Bottom.png?raw=true") ;
   background-repeat: repeat-x, repeat-x;
   background-position-y: top, bottom;
   background-size: 100%;
+
+.loweLogo{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    content: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Logos/Africa-Mobile-Logo-Lowe.png?raw=true");
+  }
+
+  @media only screen and (min-width: 768px) {
+    //Desktop versions of the following
+    /*
+     background-image: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Top.png?raw=true"), url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Bottom.png?raw=true") ;
+  background-repeat: repeat-x, repeat-x;
+  background-position-y: top, bottom;
+  background-size: 100%;
+     */
+
+    .loweLogo{
+      content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Logos/Africa-Kiosk-Logo-Lowe.png?raw=true");
+    }
+  }
+
 }
 
 a {
