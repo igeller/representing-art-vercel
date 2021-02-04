@@ -7,6 +7,12 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #1E1C1C;
+  color: white;
+  background-image: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Top.png?raw=true"), url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Bottom.png?raw=true") ;
+  background-repeat: repeat-x, repeat-x;
+  background-position-y: top, bottom;
+  background-size: 100%;
 }
 
 a {

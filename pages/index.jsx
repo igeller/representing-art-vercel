@@ -12,7 +12,7 @@ export default function Home() {
       <div>
         {/*musuem anme*/}
         <h1>LOWE</h1>
-
+        <img src={"https://github.com/igeller/assets/blob/main/Assets/Mobile/Logos/Africa-Mobile-Logo-Lowe.png?raw=true"} />
         {/*//Project Name*/}
         <h2>RE-PRESENTING ART</h2>
         {/*info about project*/}

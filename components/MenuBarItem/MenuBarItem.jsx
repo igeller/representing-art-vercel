@@ -6,7 +6,6 @@ import {Accordion, Card} from "react-bootstrap";
 const MenuBarItem = (props) => {
     return(
         <>
-            {console.log(props)}
             <Card>
                 <Accordion.Toggle as={Card.Header} eventKey={props.eventKey}>
                     {props.details.menuTitle}
