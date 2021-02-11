@@ -1,23 +1,25 @@
 import React from 'react';
-import {Card} from "react-bootstrap";
+import {Card, Col} from "react-bootstrap";
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
-//{/*href={props.linkToMaskDetails}*/}
 const MaskGalleryCards = (props) =>{
     return(
-        <Card>
-            <Card.Img variant={props.maskOBJ.card.imagePosition} src={props.maskOBJ.card.imageSrc}/>
-            <Link href={{ pathname: props.maskOBJ.card.linkToMaskDetails, query: { maskNumber: props.maskOBJ.id }}}>
-                <a className="btn btn-primary stretched-link">Learn More</a>
-            </Link>
-        </Card>
+        <Col>
+            <Card className={"mb-4"}>
+                <Link href={{ pathname: props.maskOBJ.card.linkToMaskDetails, query: { maskNumber: props.maskOBJ.id }}}>
+                    <Card.Img variant={props.maskOBJ.card.imagePosition} src={props.maskOBJ.card.imageSrc} className={` img`}/>
+                </Link>
+            </Card>
+        </Col>
+
 
     )
 }
 
 MaskGalleryCards.propTypes = {
     maskOBJ: PropTypes.object.isRequired,
+    marginRight: PropTypes.bool
 };
 
 

@@ -1,23 +1,15 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  .testing{
-    display: block;
-  }
+
   .btn {
     background-color: transparent !important;
     border-color: white;
     border-width: 6px;
     font-weight: bold;
   }
+
+.title{
+  font-weight: bold;
 }
-
-
 
 
 

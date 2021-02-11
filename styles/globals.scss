@@ -1,40 +1,67 @@
+
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap";
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #1E1C1C;
-  color: white;
-  text-align: center;
+////some custom mixin stuff
+//.cardColumns {
+//  @include media-breakpoint-up(xl) {
+//    column-count: 6;
+//  }
+//
+//  @include media-breakpoint-up(lg) {
+//    column-count: 5;
+//  }
+//  //
+//  @include media-breakpoint-up(md) {
+//    column-count: 4;
+//  }
+//
+//  @include media-breakpoint-up(sm) {
+//    column-count: 3;
+//  }
+//  column-count: 2;
+//  //}
+//
+//}
 
-  background-image: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Top.png?raw=true"), url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Bottom.png?raw=true") ;
-  background-repeat: repeat-x, repeat-x;
-  background-position-y: top, bottom;
-  background-size: 100%;
+html{
+  //min-height: 100%;
+  //box-sizing: content-box;
+  body {
 
-.loweLogo{
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    content: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Logos/Africa-Mobile-Logo-Lowe.png?raw=true");
-  }
+    //margin-top:  $spacer * 3;
+    //margin-bottom:  $spacer * 3;
+    //padding-top: $spacer*3;
 
-  @media only screen and (min-width: 768px) {
-    //Desktop versions of the following
-    /*
-     background-image: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Top.png?raw=true"), url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Bottom.png?raw=true") ;
-  background-repeat: repeat-x, repeat-x;
-  background-position-y: top, bottom;
-  background-size: 100%;
-     */
+
+
+    //background-image: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Top.png?raw=true"), url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Bottom.png?raw=true") ;
+    //background-repeat: repeat-x, repeat-x;
+    //background-position-y: top, bottom;
+    //background-size: 100%;
+
+
 
     .loweLogo{
-      content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Logos/Africa-Kiosk-Logo-Lowe.png?raw=true");
+      display: block;
+      content: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Logos/Africa-Mobile-Logo-Lowe.png?raw=true");
     }
+
+    @media only screen and (min-width: 768px) {
+      //Desktop versions of the following
+      /*
+       background-image: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Top.png?raw=true"), url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Bottom.png?raw=true") ;
+    background-repeat: repeat-x, repeat-x;
+    background-position-y: top, bottom;
+    background-size: 100%;
+       */
+
+      //.loweLogo{
+      //  content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Logos/Africa-Kiosk-Logo-Lowe.png?raw=true");
+      //}
+    }
+
   }
 
 }
@@ -45,5 +72,10 @@ a {
 }
 
 * {
-  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #1E1C1C;
+  color: white;
+  text-align: center;
+
 }
