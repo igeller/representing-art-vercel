@@ -1,0 +1,8 @@
+.topMenuItemTitle *{
+  //background-color: $itemBG;
+  font-size: max(25px,16px)
+}
+
+@function setTopMenuItemTitle($x){
+  $itemBG: $x
+}

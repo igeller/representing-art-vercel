@@ -2,6 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 
 ////some custom mixin stuff
 //.cardColumns {
@@ -74,7 +75,7 @@ a {
 * {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #1E1C1C;
+  background-color: black;
   color: white;
   text-align: center;
 
