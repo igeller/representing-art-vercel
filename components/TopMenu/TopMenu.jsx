@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {Button, Navbar, Nav, Accordion, Card} from "react-bootstrap";
+import {Navbar, Nav, Accordion} from "react-bootstrap";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import styles from './TopMenu.module.scss'
 import menuInfo from "../../constants/menu_info";
@@ -19,8 +19,8 @@ const TopMenu = (props) => {
                 <img className={'loweLogo w-25 mx-auto my-auto d-flex'}/>
                 <Navbar.Toggle
                     aria-controls="basic-navbar-nav"
-                    className={`${styles.menustyle} p-0`}
-                    style={{}}/>
+                    className={`${styles.menustyle} ${styles.toggle} p-0 border-0`}
+                />
                 <Navbar.Collapse id="basic-navbar-nav" className={'text-right'}>
                     <Nav className={`mr-auto ${styles.menustyle} w-100` }>
                         <Accordion bg={"black"} className={'d-flex flex-column'}>
