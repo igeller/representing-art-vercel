@@ -24,7 +24,7 @@ export default function Home() {
             </Link>
           </div>
           {/*CHANGE TO CORRECT IMAGE BELOW!!*/}
-          <img className={'loweLogo w-50 mt-5 pt-5 mx-auto'}/>
+          <img className={'mellonLogo w-50 mt-5 pt-5 mx-auto'}/>
 
           <BottomBanner/>
       </div>
