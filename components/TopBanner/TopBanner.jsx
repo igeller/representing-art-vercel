@@ -5,9 +5,9 @@ import PropTypes from "prop-types";
 
 const TopBanner = (props) =>{
     return(
-        <img className={`${styles.topbannerbg} ${props.className}`} src={"https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Top.png?raw=true"}></img>
+        <img className={`${styles.topbanner} ${props.className} d-flex`}/>
     )
-};
+}
 
 TopBanner.propTypes = {
     className: PropTypes.string
