@@ -19,8 +19,6 @@ const MapModal = (props) => {
         attributionControl: false
     });
 
-
-
     return(
         <>
 
@@ -44,20 +42,18 @@ const MapModal = (props) => {
                             height: '100%'
                          }}
                          className={"w-100"}
-                         center={[-80.191788, 25.761681]}
-                         zoom={[5]}
+                         center={[`${props.mapDetails.centerMapLong}`, `${props.mapDetails.centerMapLat}`]}
+                         zoom={[3.75]}
                     >
 
                         {/* Circle example */}
                         <Marker
-                            coordinates={[-80.191788, 25.761681]}
+                            coordinates={[`${props.mapDetails.markerLong}`, `${props.mapDetails.markerLat}`]}
                             anchor="bottom"
                             className={`bg-transparent`}
                             color={'red'}
                         >
                             <FontAwesomeIcon icon={faMapMarkerAlt} size={"3x"} className={`${styles.mapIcon}`}/>
-                            {/*<FontAwesomeIcon icon={['fa', 'coffee']} size={"3x"} />*/}
-
                         </Marker>
                     </Map>
                 </Modal.Body>
@@ -69,7 +65,9 @@ const MapModal = (props) => {
 
 MapModal.propTypes = {
     openMapModal: PropTypes.bool.isRequired,
-    closeMapModal: PropTypes.func.isRequired
+    closeMapModal: PropTypes.func.isRequired,
+    mapDetails: PropTypes.object.isRequired,
+    bgColor: PropTypes.string.isRequired
 }
 
 export default MapModal;
