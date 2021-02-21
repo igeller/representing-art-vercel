@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 const BottomBanner = (props) =>{
     return(
-        <img className={`${styles.bottombannerbg} ${props.className} d-block fixed-bottom`} src={"https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Bottom.png?raw=true"}></img>
+        <img className={`${styles.bottombannerbg} ${props.className} d-block fixed-bottom`}/>
     )
 }
 

@@ -1,13 +1,12 @@
 .bottombannerbg{
-  //background-image:url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Bottom.png?raw=true") ;
-  //position: fixed;
+  content: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Bottom.png?raw=true");
   background-repeat: repeat-x;
-  //background-position-y: top, bottom;
-  //background-size: 100%;
-  //background-position: bottom;
-  //display: inline-block;
   width: 100%;
   bottom: 0px;
+
+  @media only screen and (min-width: 768px) {
+    content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Banners/Africa-Kiosk-Banner-Top.png?raw=true");
+  }
 }
 
 //duplicate for the larger sizes
