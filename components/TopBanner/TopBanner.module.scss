@@ -1,13 +1,8 @@
 .topbanner{
   content: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Top.png?raw=true");
-  //background-image: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Top.png?raw=true") ;
-  //background-repeat: repeat-x;
-  //background-position-y: top, bottom;
-  //background-size: 100%;
-  //background-position: center;
-  //display: inline-block;
   width: 100%;
-  //box-sizing: border-box;
-}
 
-//duplicate for the larger sizes
+  @media only screen and (min-width: 768px) {
+    content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Banners/Africa-Kiosk-Banner-Bottom.png?raw=true");
+  }
+}
