@@ -1,0 +1,20 @@
+.pos{
+  background-color: transparent !important;
+  position: fixed !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  width: 100%;
+  padding: 0px !important;
+  margin: 0px !important;
+  margin-bottom: (1rem*4 )!important;
+  border-radius: 0px !important;
+  height: 60%;
+}
+
+.ovrflw{
+  overflow-y: scroll;
+}
+
+.mapIcon path{
+  color: red !important;
+}
