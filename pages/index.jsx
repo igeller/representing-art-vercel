@@ -1,7 +1,6 @@
 import styles from '../styles/Home.module.scss'
 import Button from "react-bootstrap/Button";
 import React from "react";
-
 import Link from 'next/link';
 import TopBanner from "../components/TopBanner/TopBanner";
 import BottomBanner from "../components/BottomBanner/BottomBanner";

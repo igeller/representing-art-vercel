@@ -1,5 +1,5 @@
 import React from "react";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import PropTypes from "prop-types";
 import {ButtonGroup, Button} from "react-bootstrap";
 import Link from "next/link";
@@ -18,6 +18,7 @@ const BottomNav = (props) => {
     const [showMap, setShowMap] = useState(false);
     const [showInfo, setShowInfo] = useState(false);
 
+
     return(
         <>
             <ButtonGroup className={`${props.className} ${styles.menustyle} w-100`}>
@@ -25,7 +26,8 @@ const BottomNav = (props) => {
                 <Link href={{ query: { maskNumber: props.previousMask }}}>
                     <a
                         className={`btn btn-primary stretched-link ${styles.buttonborder} w-100 mr-1 p-2`}
-                        style={{backgroundColor: `#DA5527`}}>
+                        style={{backgroundColor: `#DA5527`}}
+                    >
                             <FontAwesomeIcon icon={faChevronLeft} size={`2x`} className={`bg-transparent d-block mx-auto`}/>
                             <ReactFitText minFontSize={10}>
                                 <div className={`bg-transparent mt-1`}>
@@ -64,7 +66,8 @@ const BottomNav = (props) => {
                 <Link href={{ query: { maskNumber: props.previousMask }}}>
                     <a
                         className={`btn btn-primary stretched-link ${styles.buttonborder} w-100`}
-                        style={{backgroundColor: `#C0CB2F`}}>
+                        style={{backgroundColor: `#C0CB2F`}}
+                    >
                             <FontAwesomeIcon icon={faChevronRight} size={`2x`} className={`bg-transparent d-block mx-auto`}/>
                             <ReactFitText minFontSize={10}>
                                 <div className={`bg-transparent mt-1`}>
@@ -82,14 +85,15 @@ const BottomNav = (props) => {
             />
             <InfoModal
                 openInfoModal={showInfo}
+                bgColor={'#F37424'}
                 closeInfoModal={() => setShowInfo(false)}
                 group={props.maskDetails.group}
                 groupLocation={props.maskDetails.groupLocation}
                 itemName={props.maskDetails.itemName}
                 itemCreation={props.maskDetails.itemCreation}
                 medium={props.maskDetails.medium}
-                bgColor={'#F37424'}
                 description={props.maskDetails.description}
+                providedBy={props.maskDetails.providedBy}
             />
 
         </>
