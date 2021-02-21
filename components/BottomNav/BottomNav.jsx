@@ -82,7 +82,7 @@ const BottomNav = (props) => {
                 openMapModal={showMap}
                 closeMapModal={() => setShowMap(false)}
                 bgColor={'#A3D7F4'}
-                mapDetails={props.maskDetails.mapInfo}
+                mapDetails={props.maskDetails}
             />
             <InfoModal
                 openInfoModal={showInfo}

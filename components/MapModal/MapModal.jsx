@@ -42,13 +42,13 @@ const MapModal = (props) => {
                             height: '100%'
                          }}
                          className={"w-100"}
-                         center={[`${props.mapDetails.centerMapLong}`, `${props.mapDetails.centerMapLat}`]}
+                         center={[`${props.mapDetails.mapInfo.centerMapLong}`, `${props.mapDetails.mapInfo.centerMapLat}`]}
                          zoom={[3.75]}
                     >
 
                         {/* Circle example */}
                         <Marker
-                            coordinates={[`${props.mapDetails.markerLong}`, `${props.mapDetails.markerLat}`]}
+                            coordinates={[`${props.mapDetails.mapInfo.markerLong}`, `${props.mapDetails.mapInfo.markerLat}`]}
                             anchor="bottom"
                             className={`bg-transparent`}
                             color={'red'}

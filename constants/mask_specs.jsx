@@ -24,14 +24,12 @@ const masks = [
             description: 'In Bamana mythology Chi Wara is a creature born of the union between a woman who was the first human and a snake. Chi Wara used his claws and a pointed stick to cultivate the earth, turning wild grasses into grain. He taught his technique to humans. His image is that of an antelope often combined with creatures associated with the earth such as lizards or aardvarks. Members of an organization of young men associated with agriculture wear the headdress.',
             providedBy: 'Gift of Professor and Mrs. Robert R.Ferens',
             mapInfo:{
-                mapInfo:{
                     centerMapLong: '-3.9962',
                     centerMapLat: '17.5707',
                     markerLong: '-2.7855',
                     markerLat: '15.8494'
                 }
             }
-        }
     },
     {
         name: "Double-faced Helmet Mask",

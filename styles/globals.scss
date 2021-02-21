@@ -4,35 +4,13 @@
 @import "~bootstrap";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
-////some custom mixin stuff
-//.cardColumns {
-//  @include media-breakpoint-up(xl) {
-//    column-count: 6;
-//  }
-//
-//  @include media-breakpoint-up(lg) {
-//    column-count: 5;
-//  }
-//  //
-//  @include media-breakpoint-up(md) {
-//    column-count: 4;
-//  }
-//
-//  @include media-breakpoint-up(sm) {
-//    column-count: 3;
-//  }
-//  column-count: 2;
-//  //}
-//
-//}
-
 html{
   //min-height: 100%;
   //box-sizing: content-box;
   body {
     text-align: center;
     background-color: black;
-    overflow-y: scroll;
+    //overflow-y: scroll;
 
     .loweLogo{
       display: block;
