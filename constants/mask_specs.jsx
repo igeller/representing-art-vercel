@@ -10,8 +10,8 @@ const masks = [
             linkToMaskDetails:"/mask_gallery/mask1"
         },
         model: {
-            glb:"https://cors-anywhere.herokuapp.com/https://representingart.stdcdn.com/punu/punu.glb",
-            usdz:"https://representingart.stdcdn.com/punu/Punu_People_Ceremonial_Dance_Mask.usdz",
+            glb:"https://cors-anywhere.herokuapp.com/https://github.com/igeller/assets/blob/main/small%20model/untitled.glb",
+            usdz:"https://cors-anywhere.herokuapp.com/https://github.com/igeller/assets/blob/main/small%20model/Yoruba_Mask.usdz",
             placeholder:"https://emuseum1.as.miami.edu/internal/media/dispatcher/1508/preview",
         },
         details: {
@@ -42,8 +42,8 @@ const masks = [
             linkToMaskDetails:"/mask_gallery/mask1"
         },
         model: {
-            glb:"https://representingart.stdcdn.com/lega/Lega_People_Bwami_Society_Rank_Mask.glb",
-            usdz:"https://representingart.stdcdn.com/lega/Lega_People_Bwami_Society_Rank_Mask.usdz",
+            glb:"https://github.com/igeller/assets/blob/main/small%20model/untitled.glb?raw=true",
+            usdz:"https://cors-anywhere.herokuapp.com/https://github.com/igeller/assets/blob/main/small%20model/Yoruba_Mask.usdz",
             placeholder:"https://emuseum1.as.miami.edu/internal/media/dispatcher/21/preview",
         },
         details: {

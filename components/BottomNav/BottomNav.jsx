@@ -1,5 +1,5 @@
 import React from "react";
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import PropTypes from "prop-types";
 import {ButtonGroup, Button} from "react-bootstrap";
 import Link from "next/link";
@@ -7,8 +7,9 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import MapModal from "../MapModal/MapModal";
 import InfoModal from "../InfoModal/InfoModal";
 import * as styles from './BottomNav.module.scss';
-import {faChevronLeft, faChevronRight, faInfoCircle, faCompass} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
+import {faChevronLeft, faChevronRight, faInfoCircle, faCompass} from "@fortawesome/free-solid-svg-icons";
 const ReactFitText = require('react-fittext');
 
 

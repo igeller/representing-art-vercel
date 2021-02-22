@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const ModelViewer = function(props) {
     return(
-        <div className={`${props.className}`}>
+        <div className={`${props.className} `}>
             <Head>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
                 <script noModule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
@@ -13,7 +13,7 @@ const ModelViewer = function(props) {
                 <model-viewer
                     src={props.glb}
                     ios-src={props.usdz}
-                    poster={props.placeholderImage}
+                    poster={props.placeholder}
                     loading={'eager'}
                     reveal={'interaction'}
                     style={{width: '100%', height: '70vh'}}
@@ -38,7 +38,7 @@ ModelViewer.propTypes={
     glb: PropTypes.string.isRequired,
     usdz: PropTypes.string.isRequired,
     placeholder: PropTypes.string.isRequired,
-    className: PropTypes.string
+    className: PropTypes.string.isRequired
 }
 
 export default ModelViewer;
