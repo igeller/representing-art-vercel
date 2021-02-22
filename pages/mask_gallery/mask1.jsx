@@ -8,7 +8,7 @@ export default function mask1(props) {
 
     return (
         <div style={{height: '100vh'}}>
-            <TopNavBar className={'fixed-top position-sticky mb-3'} backLink={'./mask_gallery/'}/>
+            <TopNavBar className={'fixed-top position-sticky mb-3'} backLink={'./'}/>
 
             <MaskInfoView maskOBJ={maskSpecs[props.maskNumber]}/>
             <BottomNav

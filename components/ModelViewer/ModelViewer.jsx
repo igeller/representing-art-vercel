@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const ModelViewer = function(props) {
     return(
-        <div className={`${props.className} `}>
+        <div className={`${props.className}`}>
             <Head>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
                 <script noModule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>

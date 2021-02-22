@@ -9,7 +9,7 @@ import BottomBanner from "../../components/BottomBanner/BottomBanner";
 export default function index() {
     return (
         <div className={'mx-4 my-5 pt-5 d-flex '}>
-            <TopNavBar backlnk={'/'} className={'fixed-top'}/>
+            <TopNavBar backLink={'/'} className={'fixed-top'}/>
             <div className={`mt-2`}>
                 <Textfit
                     mode={`single`}
@@ -26,7 +26,7 @@ export default function index() {
 
                 </CardGroup>
             </div>
-            <BottomBanner></BottomBanner>
+            <BottomBanner/>
         </div>
     )
 }
