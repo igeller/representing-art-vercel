@@ -21,14 +21,25 @@ html{
       content: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Logos/Africa-Kiosk-Mobile-Mellon.png?raw=true")
     }
 
+    @media only screen and (min-width: 768px) {
+      .loweLogo{
+        display: block;
+        content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Logos/Africa-Kiosk-Logo-Lowe.png?raw=true");
+      }
+      .mellonLogo{
+        display: block;
+        content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Logos/Africa-Kiosk-Logo-Mellon.png?raw=true")
+      }
+    }
+
   }
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+
 }
 
-
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 * {
   font-family: -apple-system, Helvetica Neue, sans-serif;
@@ -38,29 +49,3 @@ html{
 
 }
 
-
-//@media only screen and (min-width: 768px) {
-//  .loweLogo{
-//    display: block;
-//    content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Logos/Africa-Kiosk-Logo-Lowe.png?raw=true");
-//  }
-//  .mellonLogo{
-//    display: block;
-//    content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Logos/Africa-Kiosk-Logo-Mellon.png?raw=true")
-//  }
-//}
-
-@media only screen and (min-width: 900px) {
-  html{
-    //width: 900px !important;
-    margin: 0 auto;
-  }
-  .loweLogo{
-    display: block;
-    content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Logos/Africa-Kiosk-Logo-Lowe.png?raw=true");
-  }
-  .mellonLogo{
-    display: block;
-    content: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FImage&psig=AOvVaw17rztXHAnh5c7ciUp5HqOb&ust=1614129142316000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMCGvuPp_u4CFQAAAAAdAAAAABAD")
-  }
-}
