@@ -5,12 +5,13 @@ import PropTypes from "prop-types";
 
 const TopBanner = (props) =>{
     return(
-        <img className={`${styles.topbanner} ${props.className} d-flex`}/>
+        <img className={`${styles.topbanner} ${props.className} d-flex`} id={`${props.id}`}/>
     )
 }
 
 TopBanner.propTypes = {
-    className: PropTypes.string
+    className: PropTypes.string,
+    id: PropTypes.string
 };
 
 
