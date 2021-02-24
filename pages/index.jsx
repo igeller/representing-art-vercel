@@ -18,7 +18,7 @@ let mellonImage = 'https://igeller.github.io/assets/Assets/Mobile/Logos/Africa-M
 // ];
 
 
-export default function Home(pageProps) {
+export default function Home() {
 
     let [pos, setState] = useState(0)
     let posT, posB = 0;
@@ -34,8 +34,10 @@ export default function Home(pageProps) {
         if(document.readyState == "complete") {
             posT = document.getElementById('t1').getBoundingClientRect().bottom
             posB = document.getElementById('b1').getBoundingClientRect().top
+            console.log('###:T', posT, ' ####B: ', posB, posB-posT)
+            let hei = posB-posT
             document.getElementById('bodyDiv').style.marginTop = `${posT}px`
-            document.getElementById('bodyDiv').style.height = `${posB-posT}px`
+            document.getElementById('bodyDiv').style.height = `${hei}px`
             console.log('******!!!! use effectcomplete', document.getElementById('t1').getBoundingClientRect())
 
             if(window.width > 900){
