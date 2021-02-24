@@ -34,6 +34,7 @@
     "react-leaflet": "^3.0.5",
     "react-mapbox-gl": "^5.1.1",
     "react-native": "^0.63.4",
+    "react-resize-detector": "^6.6.0",
     "react-scale-text": "^1.2.2",
     "react-textfit": "^1.1.1",
     "sass": "^1.30.0"
