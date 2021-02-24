@@ -14,23 +14,21 @@ html{
 
     .loweLogo{
       display: block;
-      content: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Logos/Africa-Mobile-Logo-Lowe.png?raw=true");
+      //content: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Logos/Africa-Mobile-Logo-Lowe.png?raw=true");
     }
     .mellonLogo{
       display: block;
-      content: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Logos/Africa-Kiosk-Mobile-Mellon.png?raw=true")
+      //content: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Logos/Africa-Kiosk-Mobile-Mellon.png?raw=true")
     }
 
-    @media only screen and (min-width: 768px) {
-      .loweLogo{
-        display: block;
-        content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Logos/Africa-Kiosk-Logo-Lowe.png?raw=true");
-      }
-      .mellonLogo{
-        display: block;
-        content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Logos/Africa-Kiosk-Logo-Mellon.png?raw=true")
-      }
-    }
+    //@media only screen and (min-width: 768px) {
+    //  .loweLogo{
+    //    content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Logos/Africa-Kiosk-Logo-Lowe.png?raw=true");
+    //  }
+    //  .mellonLogo{
+    //    content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Logos/Africa-Kiosk-Logo-Mellon.png?raw=true")
+    //  }
+    //}
 
   }
 
