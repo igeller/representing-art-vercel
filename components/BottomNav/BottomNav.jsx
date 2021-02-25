@@ -21,8 +21,8 @@ const BottomNav = (props) => {
 
 
     return(
-        <>
-            <ButtonGroup className={`${props.className} ${styles.menustyle} w-100`}>
+<>
+            <ButtonGroup className={`${props.className} ${styles.menustyle} w-100`} id={`${props.id}`}>
 
                 <Link href={{ query: { maskNumber: props.previousMask }}}>
                     <a
@@ -108,7 +108,8 @@ BottomNav.propTypes = {
     previousMask: PropTypes.number.isRequired,
     maskDetails: PropTypes.object.isRequired,
     className: PropTypes.string,
-    style: PropTypes.string
+    style: PropTypes.string,
+    id: PropTypes.string
 }
 
 export default BottomNav;

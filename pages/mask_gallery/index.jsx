@@ -57,7 +57,7 @@ export default function index() {
     return (
         <div className={'mx-4 my-5 pt-5 d-flex '}>
             <TopNavBar backLink={'/'} className={'fixed-top'} id={'t1'}/>
-            <div className={`mt-2 ${styles.bodyOvrflw}`} id={'bodyDiv'} >
+            <div className={`pt-3 ${styles.bodyOvrflw}`} id={'bodyDiv'} >
                 <Textfit
                     mode={`single`}
                     className={'mx-5 mb-3'}>

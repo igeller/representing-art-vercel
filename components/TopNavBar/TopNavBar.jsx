@@ -7,9 +7,6 @@ import TopMenu from "../TopMenu/TopMenu";
 
 
 const TopNavBar = (props) =>{
-    const topBannerBottomPos = useContext(TopBanner)
-    console.log('yussd', topBannerBottomPos)
-
     return(
         <div className={`${props.className} d-block`} style={{zIndex: '1'}} id={`${props.id}`}>
             <TopMenu backLink={`${props.backLink}`}/>
