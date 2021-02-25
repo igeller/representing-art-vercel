@@ -10,8 +10,8 @@ const masks = [
             linkToMaskDetails:"/mask_gallery/mask1"
         },
         model: {
-            glb:"https://cors-anywhere.herokuapp.com/https://github.com/igeller/assets/blob/main/small%20model/untitled.glb?raw=true",
-            usdz:"https://cors-anywhere.herokuapp.com/https://github.com/igeller/assets/blob/main/small%20model/Yoruba_Mask.usdz?raw=true",
+            glb:"https://igeller.github.io/assets/small%20model/untitled.glb",
+            usdz:"https://igeller.github.io/assets/small%20model/Yoruba_Mask.usdz?raw=true",
             placeholder:"https://emuseum1.as.miami.edu/internal/media/dispatcher/1508/preview",
         },
         details: {
@@ -42,9 +42,9 @@ const masks = [
             linkToMaskDetails:"/mask_gallery/mask1"
         },
         model: {
-            glb:"https://cors-anywhere.herokuapp.com/https://github.com/igeller/assets/blob/main/small%20model/untitled.glb?raw=true",
-            usdz:"https://cors-anywhere.herokuapp.com/https://github.com/igeller/assets/blob/main/small%20model/Yoruba_Mask.usdz?raw=true",
-            placeholder:"https://emuseum1.as.miami.edu/internal/media/dispatcher/21/preview",
+            glb:"https://igeller.github.io/assets/small%20model/untitled.glb",
+            usdz:"https://igeller.github.io/assets/small%20model/Yoruba_Mask.usdz?raw=true",
+            placeholder:"https://emuseum1.as.miami.edu/internal/media/dispatcher/1508/preview",
         },
         details: {
             group: 'Ejagham people',

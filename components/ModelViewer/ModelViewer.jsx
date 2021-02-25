@@ -16,7 +16,7 @@ const ModelViewer = function(props) {
                     poster={props.placeholder}
                     loading={'eager'}
                     reveal={'interaction'}
-                    style={{width: '100%', height: '70vh'}}
+                    style={{width: '100%', height: '100%'}}
                     ar
                     ar-modes="webxr scene-viewer quick-look"
                     ar-scale="auto"

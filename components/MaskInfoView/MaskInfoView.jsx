@@ -11,7 +11,7 @@ const ReactFitText = require('react-fittext');
 const MaskInfoView = (props) => {
 
     return(
-        <div className={'position-static bg-transparent overflow-auto'} >
+        <div className={`bg-transparent ${props.className}`} id={`${props.id}`}>
             <ReactFitText
                 compressor={2.25}
                 minFontSize={10}>
@@ -21,7 +21,7 @@ const MaskInfoView = (props) => {
                     </h1>
             </ReactFitText>
                 <ModelViewer
-                    className={`my-4`}
+                    className={``}
                     glb={props.maskOBJ.model.glb}
                     usdz={props.maskOBJ.model.usdz}
                     placeholder={props.maskOBJ.model.placeholder}
@@ -31,7 +31,9 @@ const MaskInfoView = (props) => {
 };
 
 MaskInfoView.propTypes = {
-    maskOBJ: PropTypes.object.isRequired
+    maskOBJ: PropTypes.object.isRequired,
+    className: PropTypes.string,
+    id: PropTypes.string
 }
 
 export default MaskInfoView;
