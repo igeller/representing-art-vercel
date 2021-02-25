@@ -57,13 +57,13 @@ export default function index() {
     return (
         <div className={'mx-4 d-flex '}>
             <TopNavBar backLink={'/'} className={'fixed-top'} id={'t1'}/>
-            <div className={`pt-3 `} id={'bodyDiv'} >
+            <div className={`pt-3 mb-3 ${styles.bodyOvrflw}`} id={'bodyDiv'} >
                 <Textfit
                     mode={`single`}
                     className={'mx-5 mb-3'}>
                     <div>RE-PRESENTING ART</div>
                 </Textfit>
-                <CardGroup className={"mx-auto row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 overflow-auto"}>
+                <CardGroup className={`mx-auto row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 `}>
                     <MaskGalleryCards maskOBJ={masks[0]}/>
                     <MaskGalleryCards maskOBJ={masks[1]}/>
                     <MaskGalleryCards maskOBJ={masks[1]}/>
