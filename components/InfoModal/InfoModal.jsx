@@ -30,10 +30,10 @@ const InfoModal = (props) => {
                 onHide={props.closeInfoModal}
             >
                 <Modal.Body
-                    className={`text-left h-25 p-4`}
+                    className={`text-left p-4`}
                     style={{backgroundColor: `${props.bgColor}`}}
                 >
-                    <div className={`h-100 ${styles.ovrflw} p-0 m-0`}>
+                    <div className={`${styles.ovrflw} p-0 m-0`}>
                         <ReactFitText minFontSize={10}>
                             <h1 className={'mb-1 font-weight-bold'}>{props.group}</h1>
                         </ReactFitText>

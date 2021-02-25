@@ -46,7 +46,7 @@ const BottomNav = (props) => {
                         <FontAwesomeIcon icon={faInfoCircle} size={`2x`} className={`bg-transparent d-block mx-auto`}/>
                         <ReactFitText minFontSize={10}>
                             <div className={`bg-transparent mt-1`}>
-                                More Info
+                                Info
                             </div>
                         </ReactFitText>
                 </Button>
@@ -109,7 +109,7 @@ BottomNav.propTypes = {
     maskDetails: PropTypes.object.isRequired,
     className: PropTypes.string,
     style: PropTypes.string,
-    id: PropTypes.string
+    id: PropTypes.string,
 }
 
 export default BottomNav;

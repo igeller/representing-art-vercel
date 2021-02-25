@@ -21,7 +21,7 @@ const MaskInfoView = (props) => {
                     </h1>
             </ReactFitText>
                 <ModelViewer
-                    className={``}
+                    // className={`${props.className}`}
                     glb={props.maskOBJ.model.glb}
                     usdz={props.maskOBJ.model.usdz}
                     placeholder={props.maskOBJ.model.placeholder}

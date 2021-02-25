@@ -5,7 +5,8 @@ import {Button, Modal, ModalDialog} from "react-bootstrap";
 import Link from "next/link";
 import ReactMapboxGl, { Layer, Feature, Marker } from 'react-mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import styles from './MapModal.module.scss'
+import styles from '../InfoModal/InfoModal.module.scss'
+import stylesMap from './MapModal.module.scss'
 import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";//CHANGE FOR THE DE
 
@@ -53,7 +54,7 @@ const MapModal = (props) => {
                             className={`bg-transparent`}
                             color={'red'}
                         >
-                            <FontAwesomeIcon icon={faMapMarkerAlt} size={"3x"} className={`${styles.mapIcon}`}/>
+                            <FontAwesomeIcon icon={faMapMarkerAlt} size={"3x"} className={`${stylesMap.mapIcon}`}/>
                         </Marker>
                     </Map>
                 </Modal.Body>

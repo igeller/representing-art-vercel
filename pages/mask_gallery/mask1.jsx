@@ -6,8 +6,8 @@ import BottomNav from "../../components/BottomNav/BottomNav";
 import styles from "../../styles/Home.module.scss";
 
 export default function mask1(props) {
-    let [pos, setState] = useState(0)
-    let posT, posB = 0;
+    let [pos, setState] = useState({})
+    let posT, posB= 0;
 
     useEffect(()=>{
 
@@ -38,6 +38,8 @@ export default function mask1(props) {
     function slow(){
         const timer = setTimeout(() => {
             setState({pos: document.getElementById(`t1`).getBoundingClientRect()})
+            setState({posB: document.getElementById('b1').getBoundingClientRect().top})
+
             console.log('This will run after 2 second!')
             return;
 
@@ -52,10 +54,10 @@ export default function mask1(props) {
     return (
         <>
             <TopNavBar className={'fixed-top'} backLink={'./'} id={'t1'}/>
-
+            {/*${styles.bodyOvrflw} -- goes in maskinfoview className*/}
 
             <MaskInfoView maskOBJ={maskSpecs[props.maskNumber]} className={`pt-3 ${styles.bodyOvrflw}`} id={'bodyDiv'}/>
-
+            {console.log('pb: ', posB)}
             <BottomNav
                 className={'fixed-bottom pt-3'}
                 nextMask={maskSpecs[props.maskNumber].next}
