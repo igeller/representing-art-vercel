@@ -17,10 +17,10 @@ export default function Home() {
 
 
         <div className={`text-center h-100 gridHolder`}>
-                <TopBanner className={` topOfGrid align-self-center`} id={'t1'}/>
+                <TopBanner className={` topOfGrid`} id={'t1'}/>
 
 
-            <div className={`middleOfGrid flex-column w-100 my-4 mx-auto`} id={'bodyDiv'}>
+            <div className={`middleOfGrid my-4`} id={'bodyDiv'}>
 
                 <img className={'loweLogo w-50 mb-5 pb-5 mx-auto '} src={`${loweImage}`}/>
 
@@ -40,7 +40,7 @@ export default function Home() {
                 <img className={'mellonLogo position-relative w-50 pt-5 mx-auto align-self-end'} src={`${mellonImage}`}/>
 
             </div>
-            <BottomBanner className={`bottomOfGrid align-self-end`} id={'b1'}/>
+            <BottomBanner className={`bottomOfGrid`} id={'b1'}/>
         </div>
 
 

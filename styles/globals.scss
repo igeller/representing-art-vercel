@@ -53,16 +53,21 @@ html{
 
   .topOfGrid{
     grid-row: 1 / 1;
+    align-self: center !important;
   }
 
   .middleOfGrid{
     overflow: scroll;
     grid-row: auto/ span 28;
     min-height: 0px;
+    flex-direction: column !important;
+    width: 100% !important;
+    align-self: center;
   }
 
   .bottomOfGrid{
     grid-row: 30 / 30;
+    align-self: end !important;
   }
 
 }
