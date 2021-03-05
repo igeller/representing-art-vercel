@@ -16,11 +16,11 @@ export default function Home() {
     return (
 
 
-        <div className={`text-center h-100 ${styles.test}`}>
-                <TopBanner className={` ${styles.grt} align-self-center`} id={'t1'}/>
+        <div className={`text-center h-100 gridHolder`}>
+                <TopBanner className={` topOfGrid align-self-center`} id={'t1'}/>
 
 
-            <div className={`flex-column w-100  my-4 ${styles.bodyOvrflw} ${styles.grm} mx-auto`} id={'bodyDiv'}>
+            <div className={`middleOfGrid flex-column w-100 my-4 mx-auto`} id={'bodyDiv'}>
 
                 <img className={'loweLogo w-50 mb-5 pb-5 mx-auto '} src={`${loweImage}`}/>
 
@@ -40,7 +40,7 @@ export default function Home() {
                 <img className={'mellonLogo position-relative w-50 pt-5 mx-auto align-self-end'} src={`${mellonImage}`}/>
 
             </div>
-            <BottomBanner className={`${styles.grb} align-self-end`} id={'b1'}/>
+            <BottomBanner className={`bottomOfGrid align-self-end`} id={'b1'}/>
         </div>
 
 

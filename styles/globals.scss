@@ -43,6 +43,28 @@ html{
     margin: 0 auto;
   }
 
+
+  .gridHolder{
+    display: grid !important;
+    grid-auto-rows: 1fr;
+    max-height: 100vh !important;
+    min-height: 100vh !important;
+  }
+
+  .topOfGrid{
+    grid-row: 1 / 1;
+  }
+
+  .middleOfGrid{
+    overflow: scroll;
+    grid-row: auto/ span 28;
+    min-height: 0px;
+  }
+
+  .bottomOfGrid{
+    grid-row: 30 / 30;
+  }
+
 }
 
 
