@@ -68,7 +68,7 @@ html{
       text-align: inherit;
       max-width: 100% !important;
       @include screen('lrgr'){max-width: 900px !important;};
-      margin: 0 auto;
+      margin: initial;
     }
   }
 }

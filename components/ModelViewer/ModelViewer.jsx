@@ -9,7 +9,7 @@ const ModelViewer = function(props) {
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
                 <script noModule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
             </Head>
-            <div className={`h-100`}>
+            <div className={`h-100 w-100`}>
                 <model-viewer
                     src={props.glb}
                     ios-src={props.usdz}
@@ -31,7 +31,7 @@ const ModelViewer = function(props) {
         </div>
 
     )
-}
+};
 
 
 ModelViewer.propTypes={

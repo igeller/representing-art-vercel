@@ -11,7 +11,7 @@ export default function mask1(props) {
         <div className={`gridHolder`}>
             <TopNavBar className={'topOfGrid mb-1'} backLink={'./'} id={'t1'}/>
 
-            <MaskInfoView maskOBJ={maskSpecs[props.maskNumber]} className={`middleOfGrid ${styles.bodyOvrflw}`} id={'bodyDiv'}/>
+            <MaskInfoView maskOBJ={maskSpecs[props.maskNumber]} className={`middleOfGrid align-self-center mx-auto`} id={'bodyDiv'}/>
             <BottomNav
                 className={'bottomOfGrid mt-1'}
                 nextMask={maskSpecs[props.maskNumber].next}

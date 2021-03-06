@@ -22,8 +22,8 @@ const TopMenu = (props) => {
                     className={`${styles.menustyle} ${styles.toggle} p-0 mx-0 border-0`}
                 />
                 <Navbar.Collapse id="basic-navbar-nav" className={`text-right`}>
-                    <Nav id={`${styles.hamburgerOpenMenu}`} className={`mr-auto ${styles.menustyle} w-100` }>
-                        <Accordion bg={"black"} className={'d-flex flex-column'}>
+                    <Nav id={`${styles.hamburgerOpenMenu}`} className={`mx-auto ${styles.menustyle} w-100 mt-2 pb-2`}  style={{zIndex: 999}}>
+                        <Accordion bg={"black"} className={'d-flex flex-column mx-0'}>
                             <MenuItem
                                 eventKey={"0"}
                                 details={menuInfo[0]}

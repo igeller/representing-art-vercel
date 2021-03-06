@@ -14,7 +14,7 @@ const MaskInfoView = (props) => {
     return(
         <div className={`bg-transparent ${props.className}`} id={`${props.id}`}>
             <ReactFitText
-                compressor={1.25}
+                compressor={2.25}
                 minFontSize={10}>
                     <h1
                         className={'text-uppercase font-weight-bold'}>
@@ -22,7 +22,7 @@ const MaskInfoView = (props) => {
                     </h1>
             </ReactFitText>
                 <ModelViewer
-                    className={`${props.className}`}
+                    className={`${props.className} mt-4`}
                     glb={props.maskOBJ.model.glb}
                     usdz={props.maskOBJ.model.usdz}
                     placeholder={props.maskOBJ.model.placeholder}
