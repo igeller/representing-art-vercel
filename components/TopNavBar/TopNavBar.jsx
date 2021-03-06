@@ -8,7 +8,7 @@ import TopMenu from "../TopMenu/TopMenu";
 
 const TopNavBar = (props) =>{
     return(
-        <div className={`${props.className} d-block`} style={{zIndex: '1'}} id={`${props.id}`}>
+        <div className={`${props.className} d-block`} id={`${props.id}`}>
             <TopMenu backLink={`${props.backLink}`}/>
             <TopBanner/>
         </div>

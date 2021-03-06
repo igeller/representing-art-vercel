@@ -14,7 +14,7 @@ export default function index() {
     return (
         <div className={`gridHolder`}>
             <TopNavBar backLink={'/'} className={`topOfGrid`} id={'t1'}/>
-            <div className={` middleOfGrid my-4 mx-auto`} id={'bodyDiv'} >
+            <div className={` middleOfGrid my-4 align-self-start`} id={'bodyDiv'} >
                 <Textfit
                     mode={`single`}
                     className={'mx-5 mb-3'}>
