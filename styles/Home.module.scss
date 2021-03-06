@@ -12,15 +12,38 @@
 }
 
 .bodyOvrflw{
-  overflow-y: scroll;
+  overflow: scroll;
+  grid-row: auto/ span 28;
+  min-height: 0px;
+
+}
+
+.test{
+  display: grid !important;
+  grid-auto-rows: 1fr;
+
+  //grid-template-rows: minmax(auto, 1fr);
+  max-height: 100vh !important;
+  min-height: 100vh !important;
+
+}
+
+.grt{
+  grid-row: 1 / 1;
 }
 
 
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.grm{
 
 }
+.grb{
+  grid-row: 30 / 30;
+}
+
+//@media (max-width: 600px) {
+//  .grid {
+//    width: 100%;
+//    flex-direction: column;
+//  }
+//
+//}

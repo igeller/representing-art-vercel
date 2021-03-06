@@ -12,17 +12,17 @@ import {faChevronLeft} from "@fortawesome/free-solid-svg-icons";
 const TopMenu = (props) => {
     return(
         <>
-            <Navbar variant={"dark"} expand={"3000px"} bg={"black"} className={'d-flex justify-content-around'}>
-                <Link href={props.backLink} >
-                    <FontAwesomeIcon icon={faChevronLeft}/>
+            <Navbar variant={"dark"} expand={"3000px"} bg={"black"} className={'d-flex justify-content-around p-0 mt-4 mx-4'}>
+                <Link href={props.backLink} className={`align-self-left`}>
+                    <FontAwesomeIcon icon={faChevronLeft} className={`mx-0`}/>
                 </Link>
                 <img className={'loweLogo w-25 mx-auto my-auto d-block'}/>
                 <Navbar.Toggle
                     aria-controls="basic-navbar-nav"
-                    className={`${styles.menustyle} ${styles.toggle} p-0 border-0`}
+                    className={`${styles.menustyle} ${styles.toggle} p-0 mx-0 border-0`}
                 />
                 <Navbar.Collapse id="basic-navbar-nav" className={`text-right`}>
-                    <Nav id={`${styles.test}`} className={`mr-auto ${styles.menustyle} w-100` }>
+                    <Nav id={`${styles.hamburgerOpenMenu}`} className={`mr-auto ${styles.menustyle} w-100` }>
                         <Accordion bg={"black"} className={'d-flex flex-column'}>
                             <MenuItem
                                 eventKey={"0"}

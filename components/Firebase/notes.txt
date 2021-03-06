@@ -1,0 +1,5 @@
+only go through part of
+https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial
+- only got through to part firebase authentication api
+- have not done anything in firebase authentication api section
+- also did not do the routes section

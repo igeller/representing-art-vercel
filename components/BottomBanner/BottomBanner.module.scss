@@ -1,12 +1,9 @@
 .bottombannerbg{
-  content: url("https://github.com/igeller/assets/blob/main/Assets/Mobile/Banners/Africa-Mobile-Banner-Bottom.png?raw=true");
-  background-repeat: repeat-x;
-  width: 100%;
-  bottom: 0px;
-
-  @media only screen and (min-width: 768px) {
-    content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Banners/Africa-Kiosk-Banner-Top.png?raw=true");
-  }
+  content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Banners/Africa-Kiosk-Banner-Top.png?raw=true");
+  margin: 0 auto;
+  object-fit: cover;
+  height: 10vh;
+  //left: 0px;
+  //right: 0px;
 }
 
-//duplicate for the larger sizes
