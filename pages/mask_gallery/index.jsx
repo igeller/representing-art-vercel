@@ -13,8 +13,8 @@ export default function index() {
 
     return (
         <div className={`gridHolder`}>
-            <TopNavBar backLink={'/'} className={`topOfGrid`} id={'t1'}/>
-            <div className={` middleOfGrid my-4 align-self-start`} id={'bodyDiv'} >
+            <TopNavBar backLink={'/'} className={`topOfGrid mb-1`} id={'t1'}/>
+            <div className={` middleOfGrid align-self-start`} id={'bodyDiv'} >
                 <Textfit
                     mode={`single`}
                     className={'mx-5 mb-3'}>
@@ -30,7 +30,7 @@ export default function index() {
 
                 </CardGroup>
             </div>
-            <BottomBanner className={`bottomOfGrid`} id={`b1`}/>
+            <BottomBanner className={`bottomOfGrid mt-1`} id={`b1`}/>
         </div>
     )
 }

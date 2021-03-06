@@ -9,19 +9,20 @@ const ReactFitText = require('react-fittext');
 
 
 const MaskInfoView = (props) => {
+    let mask = props.maskOBJ;
 
     return(
         <div className={`bg-transparent ${props.className}`} id={`${props.id}`}>
             <ReactFitText
-                compressor={2.25}
+                compressor={1.25}
                 minFontSize={10}>
                     <h1
                         className={'text-uppercase font-weight-bold'}>
-                            {props.maskOBJ.name}
+                            {mask.name}
                     </h1>
             </ReactFitText>
                 <ModelViewer
-                    // className={`${props.className}`}
+                    className={`${props.className}`}
                     glb={props.maskOBJ.model.glb}
                     usdz={props.maskOBJ.model.usdz}
                     placeholder={props.maskOBJ.model.placeholder}
