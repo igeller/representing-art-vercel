@@ -16,15 +16,15 @@ export default function Home() {
     return (
 
 
-        <div className={`text-center h-100 gridHolder`}>
-                <TopBanner className={` topOfGrid`} id={'t1'}/>
+        <div className={`text-center h-100 gridHolder mx-auto`}>
+                <TopBanner className={`topOfGrid mb-1`} id={'t1'}/>
 
 
-            <div className={`middleOfGrid my-4`} id={'bodyDiv'}>
+            <div className={`middleOfGrid align-self-center`} id={'bodyDiv'}>
 
-                <img className={'loweLogo w-50 mb-5 pb-5 mx-auto '} src={`${loweImage}`}/>
+                <img className={'loweLogo w-50 mx-auto'} src={`${loweImage}`}/>
 
-                <ReactFitText minFontSize={10} compressor={1.5}>
+                <ReactFitText minFontSize={25} compressor={1.25}>
                     <h1 className={`mt-5 pt-5 ${styles.title}`}>
                         REPRESENTING ART
                     </h1>
@@ -35,12 +35,17 @@ export default function Home() {
                     Africa Gallery Collections
                 </p>
                 <Link href={'mask_gallery/'}>
-                    <Button className={`${styles.btn} mt-5 text-wrap badge-pill btn-lg px-3 py-2 w-75 mx-auto`}>View Gallery</Button>
+                    <Button className={`${styles.btn} mt-5 text-wrap badge-pill btn-lg mx-auto py-2 w-auto`}>
+                        <ReactFitText minFontSize={15} compressor={1.25}>
+                            <div className={`px-5`}> View Gallery
+                            </div>
+                        </ReactFitText>
+                    </Button>
                 </Link>
                 <img className={'mellonLogo position-relative w-50 pt-5 mx-auto align-self-end'} src={`${mellonImage}`}/>
 
             </div>
-            <BottomBanner className={`bottomOfGrid`} id={'b1'}/>
+            <BottomBanner className={`bottomOfGrid mt-1`} id={'b1'}/>
         </div>
 
 

@@ -7,10 +7,10 @@ const ReactFitText = require('react-fittext');
 
 const MaskGalleryCards = (props) =>{
     return(
-        <Col className={`mb-4`}>
+        <Col className={`m-0 mb-4`}>
             <Card className={"mb-1"}>
-                <Link href={{ pathname: props.maskOBJ.card.linkToMaskDetails, query: { maskNumber: props.maskOBJ.id }}}>
-                    <Card.Img variant={props.maskOBJ.card.imagePosition} src={props.maskOBJ.card.imageSrc} className={` img`}/>
+                <Link href={{ pathname: props.maskOBJ.linkToMaskDetails, query: { maskNumber: props.maskOBJ.id }}}>
+                    <Card.Img variant={`top`} src={props.maskOBJ.model.placeholder} className={`img`}/>
                 </Link>
             </Card>
             <ReactFitText>

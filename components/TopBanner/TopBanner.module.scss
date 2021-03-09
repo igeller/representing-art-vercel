@@ -1,7 +1,9 @@
+@import '../../styles/_definitions.scss';
+
 .topbanner{
   content: url("https://github.com/igeller/assets/blob/main/Assets/Kiosk/Banners/Africa-Kiosk-Banner-Bottom.png?raw=true");
   margin: 0 auto;
   object-fit: cover;
   height: 5vh;
-
+  @include screen('lrgr'){height: auto !important;};
 }

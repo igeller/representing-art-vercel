@@ -9,11 +9,11 @@ export default function mask1(props) {
 
     return (
         <div className={`gridHolder`}>
-            <TopNavBar className={'topOfGrid'} backLink={'./'} id={'t1'}/>
+            <TopNavBar className={'topOfGrid mb-1'} backLink={'./'} id={'t1'}/>
 
-            <MaskInfoView maskOBJ={maskSpecs[props.maskNumber]} className={` middleOfGrid ${styles.bodyOvrflw} my-4 mx-auto`} id={'bodyDiv'}/>
+            <MaskInfoView maskOBJ={maskSpecs[props.maskNumber]} className={`middleOfGrid align-self-center mx-auto`} id={'bodyDiv'}/>
             <BottomNav
-                className={'bottomOfGrid'}
+                className={'bottomOfGrid mt-1'}
                 nextMask={maskSpecs[props.maskNumber].next}
                 previousMask={maskSpecs[props.maskNumber].previous}
                 maskDetails={maskSpecs[props.maskNumber].details}

@@ -1,0 +1,34 @@
+{
+  "id": 3,
+  "next": 4,
+  "previous": 2,
+  "linkToMaskDetails": "/mask_gallery/mask1",
+  "model": {
+    "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+    "usdz": "https://igeller.github.io/assets/small%20model/Yoruba_Mask.usdz?raw=true",
+    "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/1519/preview"
+  },
+  "details": {
+    "itemName": "Cap Crest Mask (Gelede)",
+    "group": "Yoruba people",
+    "groupLocation": "Yoruba people",
+    "itemCreation": "ca. 1960",
+    "medium": "wood and paint",
+    "description": "This brightly colored cap crest mask is used in the masquerades of the Gelede society in the southwest region of Yorubaland (Nigeria). The practices of the society are not widespread among the Yoruba peoples, but are instead restricted to this region. The society is comprised of both men and women, but is led by an elderly woman. Yoruba associate women with awesome powers, and believe them to hold the keys to life itself. In an elaborate, two-day ceremony, performers pay tribute to “Our Mothers,” the matrilineal ancestors who wield extraordinary power that can have both positive and negative effects. In these ceremonies, the Gelede seek to please Our Mothers (as well as entertain the people), so they use their powers to benefit the community.\nThe masks are carved to represent specific ancestors. The red of this mask indicates the woman is a devotee of the deity Shango, and the black lines reference the city Ogbomosho. A snake is curled on top of the mask, as they were often associated with the powers of women in Yoruba society. Gelede masks are paired with full-body costumes and the performers wear iron bells around their ankles, which match the rhythm of the drum beat to which they perform.\n",
+    "providedBy": "Gift of Professor and Mrs. Robert R. Ferens\n"
+  },
+  "map": {
+    "centerMapLong": "",
+    "centerMapLat": "",
+    "markerLong": "",
+    "markerLat": ""
+  }
+}
+
+
+
+
+
+
+
+

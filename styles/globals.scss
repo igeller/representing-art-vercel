@@ -1,17 +1,13 @@
+@import '_definitions.scss';
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~bootstrap";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
-@mixin screen($media)
-{
-  @if $media == lrgr{@media only screen and (min-width: 900px){@content}}
-  //@if $media == two{@media only screen and (min-width: 40em){@content}}
-}
 html{
   height: 100% !important;
-  margin: 0 auto;
+  margin: 0 auto !important;
   box-sizing: border-box;
 
   body {
@@ -20,56 +16,63 @@ html{
     //overflow-y: hidden;
     height: 100%;
     box-sizing: content-box;
+    margin: 0 auto !important;
 
 
-    .loweLogo{
+    .loweLogo {
       display: block;
     }
-    .mellonLogo{
+
+    .mellonLogo {
       display: block;
     }
-  }
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  * {
-    font-family: -apple-system, Helvetica Neue, sans-serif;
-    background-color: inherit;
-    color: white;
-    text-align: inherit;
-    max-width: 100% !important;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    .gridHolder {
+      margin: 0 auto !important;
+      display: grid !important;
+      grid-auto-rows: 1fr;
+      alignment: center;
+      //grid-template-rows: 1fr 28fr 1fr;
+      max-height: 100vh !important;
+      min-height: 100vh !important;
+    }
+
+    .topOfGrid {
+      grid-row: 1 / 1;
+      align-self: center !important;
+    }
+
+    .middleOfGrid {
+      overflow: scroll !important;
+      grid-row: auto/ span 28;
+      min-height: 0px;
+      max-height: 100%;
+      display: flex;
+      flex-direction: column !important;
+      width: 100% !important;
+    }
+
+    .bottomOfGrid {
+      grid-row: 30 / 30;
+      align-self: end !important;
+    }
+
+    * {
+      font-family: -apple-system, Helvetica Neue, sans-serif;
+      background-color: inherit;
+      color: white;
+      text-align: inherit;
+      max-width: 100% !important;
       @include screen('lrgr'){max-width: 900px !important;};
-    margin: 0 auto;
+      margin: auto;
+    }
   }
-
-
-  .gridHolder{
-    display: grid !important;
-    grid-auto-rows: 1fr;
-    max-height: 100vh !important;
-    min-height: 100vh !important;
-  }
-
-  .topOfGrid{
-    grid-row: 1 / 1;
-    align-self: center !important;
-  }
-
-  .middleOfGrid{
-    overflow: scroll;
-    grid-row: auto/ span 28;
-    min-height: 0px;
-    flex-direction: column !important;
-    width: 100% !important;
-    align-self: center;
-  }
-
-  .bottomOfGrid{
-    grid-row: 30 / 30;
-    align-self: end !important;
-  }
-
 }
 
 

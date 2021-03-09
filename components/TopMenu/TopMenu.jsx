@@ -19,11 +19,11 @@ const TopMenu = (props) => {
                 <img className={'loweLogo w-25 mx-auto my-auto d-block'}/>
                 <Navbar.Toggle
                     aria-controls="basic-navbar-nav"
-                    className={`${styles.menustyle} ${styles.toggle} p-0 mx-0 border-0`}
+                    className={`${styles.menustyle} ${styles.toggle} p-0 mx-0 border-0 `}
                 />
                 <Navbar.Collapse id="basic-navbar-nav" className={`text-right`}>
-                    <Nav id={`${styles.hamburgerOpenMenu}`} className={`mr-auto ${styles.menustyle} w-100` }>
-                        <Accordion bg={"black"} className={'d-flex flex-column'}>
+                    <Nav id={`${styles.hamburgerOpenMenu}`} className={`w-100 mx-auto mt-2 pb-2`}  style={{zIndex: 999}}>
+                        <Accordion bg={"black"} className={'d-flex flex-column mx-0 my-0'}>
                             <MenuItem
                                 eventKey={"0"}
                                 details={menuInfo[0]}
@@ -49,10 +49,11 @@ const TopMenu = (props) => {
                                 details={menuInfo[4]}
                                 itemBackground={"#FEE49C"}/>
                         </Accordion>
+
                     </Nav>
+
                 </Navbar.Collapse>
             </Navbar>
-
 
         </>
 

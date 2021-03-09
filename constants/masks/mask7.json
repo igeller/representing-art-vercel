@@ -1,0 +1,34 @@
+{
+  "id": 6,
+  "next": 7,
+  "previous": 5,
+  "linkToMaskDetails": "/mask_gallery/mask1",
+  "model": {
+    "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+    "usdz": "https://igeller.github.io/assets/small%20model/Yoruba_Mask.usdz?raw=true",
+    "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/7963/preview"
+  },
+  "details": {
+    "itemName": "Helmet Mask",
+    "group": "Babindji people",
+    "groupLocation": "Democratic Republic of the Congo",
+    "itemCreation": "20th century",
+    "medium": "wood, abrus seeds and pigment",
+    "description": "The Babindji, also known as the Binji people, are not a fully organized political unit; rather, these peoples share traits in language and culture as a defining feature. Concentrated in Central Africa (The Democratic Republic of the Congo), Babindji origin myths indicate that they might have Kuba ancestry. This is further corroborated by the similarities of Babindji helmet masks to Kuba helmet masks (one such mask, the Bwoom mask, is also included in this exhibit). The Babindji mask here is similar to Kuba Bwoom masks in the large geometric forms that create recognizable facial features; however, it differs in the level of decoration. The wooden helmet mask has carved geometric patterning but does not include affixed beads and cowrie shells. Some have considered the Babindji Helmet masks prototypes for Kuba masks. These helmet masks are most often used in initiation ceremonies.\n",
+    "providedBy": "Gift of an Anonymous Donor"
+  },
+  "map": {
+    "centerMapLong": "",
+    "centerMapLat": "",
+    "markerLong": "",
+    "markerLat": ""
+  }
+}
+
+
+
+
+
+
+
+

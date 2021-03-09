@@ -1,0 +1,34 @@
+{
+  "id": 7,
+  "next": 0,
+  "previous": 6,
+  "linkToMaskDetails": "/mask_gallery/mask1",
+  "model": {
+    "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+    "usdz": "https://igeller.github.io/assets/small%20model/Yoruba_Mask.usdz?raw=true",
+    "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/423/preview"
+  },
+  "details": {
+    "itemName": "Face Mask (Kanaga)",
+    "group": "Dogon people",
+    "groupLocation": "Mali",
+    "itemCreation": "20th Century",
+    "medium": "Wood, pigment, plant fiber, and copper alloy\n",
+    "description": "This kanaga (woman of the spirits) mask is one of a group of nearly identical masks worn by members of the men's Awa society in the performance of the dama, a second burial rite that ends a two- to three-year period of mourning. The dama turns the deceased into a living ancestor and insures safe passage to the ancestral world. For the surviving kin and community, the dama reestablishes the family and social harmony disrupted by death. The performance lasts six days. Kanaga masks are worn in the first, or separation, phase of the performance and in the final, or reintegration, phase when the group of masqueraders ushers the soul of the dead from the village in a dramatically choreographed dance. The form of the mask consists of a boxlike face with a high forehead. Surmounting this is a superstructure of small planks laced together to form a four-part, outward pointing \"diagram\" that suggests the radial motion of the spiritual universe. Simultaneously, the form also suggests a bird, which bridges worldly and spiritual dimensions. The appearance of kanaga masks in groups is equated with the order and flocking of birds and is a suitable metaphor for the harmony and balance that the mask symbolizes.",
+    "providedBy": "Museum purchase"
+  },
+  "map": {
+    "centerMapLong": "",
+    "centerMapLat": "",
+    "markerLong": "",
+    "markerLat": ""
+  }
+}
+
+
+
+
+
+
+
+

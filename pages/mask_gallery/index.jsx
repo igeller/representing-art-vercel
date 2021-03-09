@@ -13,8 +13,8 @@ export default function index() {
 
     return (
         <div className={`gridHolder`}>
-            <TopNavBar backLink={'/'} className={`topOfGrid`} id={'t1'}/>
-            <div className={` middleOfGrid my-4 mx-auto`} id={'bodyDiv'} >
+            <TopNavBar backLink={'/'} className={`topOfGrid mb-1`} id={'t1'}/>
+            <div className={`middleOfGrid align-self-start my-0`} id={'bodyDiv'} >
                 <Textfit
                     mode={`single`}
                     className={'mx-5 mb-3'}>
@@ -23,14 +23,16 @@ export default function index() {
                 <CardGroup className={`mx-auto row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 `}>
                     <MaskGalleryCards maskOBJ={masks[0]}/>
                     <MaskGalleryCards maskOBJ={masks[1]}/>
-                    <MaskGalleryCards maskOBJ={masks[1]}/>
-                    <MaskGalleryCards maskOBJ={masks[0]}/>
-                    <MaskGalleryCards maskOBJ={masks[1]}/>
-                    <MaskGalleryCards maskOBJ={masks[1]}/>
+                    <MaskGalleryCards maskOBJ={masks[2]}/>
+                    <MaskGalleryCards maskOBJ={masks[3]}/>
+                    <MaskGalleryCards maskOBJ={masks[4]}/>
+                    <MaskGalleryCards maskOBJ={masks[5]}/>
+                    <MaskGalleryCards maskOBJ={masks[6]}/>
+                    <MaskGalleryCards maskOBJ={masks[7]}/>
 
                 </CardGroup>
             </div>
-            <BottomBanner className={`bottomOfGrid`} id={`b1`}/>
+            <BottomBanner className={`bottomOfGrid mt-1`} id={`b1`}/>
         </div>
     )
 }

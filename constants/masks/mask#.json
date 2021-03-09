@@ -1,0 +1,34 @@
+{
+  "id": ,
+  "next": ,
+  "previous": ,
+  "linkToMaskDetails": "/mask_gallery/mask1",
+  "model": {
+    "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+    "usdz": "https://igeller.github.io/assets/small%20model/Yoruba_Mask.usdz?raw=true",
+    "maskImgSrc": ""
+  },
+  "details": {
+    "itemName": "",
+    "group": "",
+    "groupLocation": "",
+    "itemCreation": "",
+    "medium": "",
+    "description": "",
+    "providedBy": ""
+  },
+  "map": {
+    "centerMapLong": "",
+    "centerMapLat": "",
+    "markerLong": "",
+    "markerLat": ""
+  }
+}
+
+
+
+
+
+
+
+

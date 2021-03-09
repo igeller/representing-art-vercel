@@ -11,18 +11,17 @@ const TopMenuItem = (props) => {
             also figure our how to pass a value to css*/}
             <Card
                 style={{backgroundColor: `${props.itemBackground}`, borderColor: `${props.itemBackground}`}}
-                className={'text-left py-3 mb-2 rounded-0'}
+                className={'text-left py-3 mb-2 mx-0 w-100 rounded-0 pl-3'}
             >
                 <Accordion.Toggle
                     as={Card.Header}
                     eventKey={props.eventKey}
-                    className={'d-flex border-0'}
+                    className={'d-flex border-0 text-left mx-0'}
                     style={{backgroundColor: `${props.itemBackground}`}}>
 
                     <Textfit
                         mode={'multi'}
-                        className={`${styles.topMenuItemTitle} font-weight-bold`}
-                        // style={{fontWeight: 'bold', backgroundColor: `${props.itemBackground}`}}>
+                        className={`${styles.topMenuItemTitle} font-weight-bold mx-0`}
                         >
                         <div style={{backgroundColor: `${props.itemBackground}`}}>
                             {props.details.menuTitle}
@@ -32,6 +31,7 @@ const TopMenuItem = (props) => {
 
                 <Accordion.Collapse
                     eventKey={props.eventKey}
+                    className={`mx-0`}
                     // style={{backgroundColor: `${props.itemBackground}`, borderColor: `${props.itemBackground}`}}>
 >
                     <Card.Body
