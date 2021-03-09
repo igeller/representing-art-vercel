@@ -1,64 +1,227 @@
+import m1 from './masks/mask1.json';
+import m2 from './masks/mask2.json';
+import m3 from './masks/mask3.json';
+import m4 from './masks/mask4.json';
+import m5 from './masks/mask5.json';
+import m6 from './masks/mask6.json';
+import m7 from './masks/mask7.json';
+import m8 from './masks/mask8.json';
+
+
 const masks = [
     {
-        name: "Head Crest Mask (Chi Wara Kun)",
-        id: 0,
-        next: 1,
-        previous: 1,
-        card: {
-            imagePositon: "top",
-            imageSrc: "https://emuseum1.as.miami.edu/internal/media/dispatcher/1508/preview",
-            linkToMaskDetails:"/mask_gallery/mask1"
-        },
+        name: m1.details.itemName,
+        id: m1.id,
+        next: m1.next,
+        previous: m1.previous,
+        linkToMaskDetails: m1.linkToMaskDetails,
         model: {
-            glb:"https://igeller.github.io/assets/small%20model/untitled.glb",
-            usdz:"https://igeller.github.io/assets/small%20model/Yoruba_Mask.usdz?raw=true",
-            placeholder:"https://emuseum1.as.miami.edu/internal/media/dispatcher/1508/preview",
+            glb: m1.model.glb,
+            usdz: m1.model.usdz,
+            placeholder: m1.model.maskImgSrc,
         },
         details: {
-            group: 'Bamana People',
-            groupLocation: 'Mali',
-            itemName: 'Head Crest Mask (Chi Wara Kun)',
-            itemCreation: 'ca. 1960',
-            medium: 'wood, metal, cowrie shells, cotton, and\n' +
-                'plant fiber',
-            description: 'In Bamana mythology Chi Wara is a creature born of the union between a woman who was the first human and a snake. Chi Wara used his claws and a pointed stick to cultivate the earth, turning wild grasses into grain. He taught his technique to humans. His image is that of an antelope often combined with creatures associated with the earth such as lizards or aardvarks. Members of an organization of young men associated with agriculture wear the headdress.',
-            providedBy: 'Gift of Professor and Mrs. Robert R.Ferens',
-            mapInfo:{
-                    centerMapLong: '-3.9962',
-                    centerMapLat: '17.5707',
-                    markerLong: '-2.7855',
-                    markerLat: '15.8494'
-                }
+            group: m1.details.group,
+            groupLocation: m1.details.groupLocation,
+            itemName: m1.details.itemName,
+            itemCreation: m1.details.itemCreation,
+            medium: m1.details.medium,
+            description: m1.details.description,
+            providedBy: m1.details.providedBy,
+            mapInfo: {
+                centerMapLong: m1.map.centerMapLat,
+                centerMapLat: m1.map.centerMapLat,
+                markerLong: m1.map.markerLong,
+                markerLat: m1.map.markerLat
             }
+        }
     },
     {
-        name: "Double-faced Helmet Mask",
-        id: 1,
-        next: 0,
-        previous: 0,
-        card: {
-            imagePositon: "top",
-            imageSrc: "https://emuseum1.as.miami.edu/internal/media/dispatcher/21/preview",
-            linkToMaskDetails:"/mask_gallery/mask1"
-        },
+        name: m2.details.itemName,
+        id: m2.id,
+        next: m2.next,
+        previous: m2.previous,
+        linkToMaskDetails: m2.linkToMaskDetails,
         model: {
-            glb:"https://igeller.github.io/assets/small%20model/untitled.glb",
-            usdz:"https://igeller.github.io/assets/small%20model/Yoruba_Mask.usdz?raw=true",
-            placeholder:"https://emuseum1.as.miami.edu/internal/media/dispatcher/1508/preview",
+            glb: m2.model.glb,
+            usdz: m2.model.usdz,
+            placeholder: m2.model.maskImgSrc,
         },
         details: {
-            group: 'Ejagham people',
-            groupLocation: 'Nigeria',
-            itemName: 'Double-faced Helmet Mask',
-            itemCreation: '20th Century',
-            medium: 'wood, hide and pigment',
-            description: 'The Cross River region of Nigeria is famous for skin-covered masks in several different forms generally associated with Ekpe, a graded men\'s society that serves as the effective government in the otherwise leaderless villages throughout this heavily forested area. A double-faced helmet mask such as this is the type usually worn by members of the highest ranking grade of Ekpe. The bulging foreheads and aquiline noses of the two faces suggest that the origin of this mask is the upper bend of the Cross River, not far from the Nigeria-Cameroon border. Ejagham is the most comprehensive name for the people in this area, but individuals prefer to identify themselves with their village or clan. Ekpe does not unify the region; rather, each village has its own cult house and its own set of masks. The dark, painted face is male, and the light face with typical painted facial patterns is female. The holes on the top of the helmet probably held small wooden pegs carved to simulate a hairstyle associated with women. However, the shape of the upper portion of the mask suggests a form of fur cap worn by men. The theme of duality conveys spiritual completeness and possibly the ability to see into the past and the future. The mask is not recognized as representing a particular spirit, but is recognized as a symbol of the corporate group Ekpe and of the powers of its leaders.',
-            providedBy: 'Museum purchase',
-            mapInfo:{
-                centerMapLong: '7.7620',
-                centerMapLat: '9.6762',
-                markerLong: '8.8546',
-                markerLat: '5.8091'
+            group: m2.details.group,
+            groupLocation: m2.details.groupLocation,
+            itemName: m2.details.itemName,
+            itemCreation: m2.details.itemCreation,
+            medium: m2.details.medium,
+            description: m2.details.description,
+            providedBy: m2.details.providedBy,
+            mapInfo: {
+                centerMapLong: m1.map.centerMapLat,
+                centerMapLat: m1.map.centerMapLat,
+                markerLong: m1.map.markerLong,
+                markerLat: m1.map.markerLat
+            }
+        }
+    },
+    {
+        name: m3.details.itemName,
+        id: m3.id,
+        next: m3.next,
+        previous: m3.previous,
+        linkToMaskDetails: m3.linkToMaskDetails,
+        model: {
+            glb: m3.model.glb,
+            usdz: m3.model.usdz,
+            placeholder: m3.model.maskImgSrc,
+        },
+        details: {
+            group: m3.details.group,
+            groupLocation: m3.details.groupLocation,
+            itemName: m3.details.itemName,
+            itemCreation: m3.details.itemCreation,
+            medium: m3.details.medium,
+            description: m3.details.description,
+            providedBy: m3.details.providedBy,
+            mapInfo: {
+                centerMapLong: m1.map.centerMapLat,
+                centerMapLat: m1.map.centerMapLat,
+                markerLong: m1.map.markerLong,
+                markerLat: m1.map.markerLat
+            }
+        }
+    },
+    {
+        name: m4.details.itemName,
+        id: m4.id,
+        next: m4.next,
+        previous: m4.previous,
+        linkToMaskDetails: m4.linkToMaskDetails,
+        model: {
+            glb: m4.model.glb,
+            usdz: m4.model.usdz,
+            placeholder: m4.model.maskImgSrc,
+        },
+        details: {
+            group: m4.details.group,
+            groupLocation: m4.details.groupLocation,
+            itemName: m4.details.itemName,
+            itemCreation: m4.details.itemCreation,
+            medium: m4.details.medium,
+            description: m4.details.description,
+            providedBy: m4.details.providedBy,
+            mapInfo: {
+                centerMapLong: m1.map.centerMapLat,
+                centerMapLat: m1.map.centerMapLat,
+                markerLong: m1.map.markerLong,
+                markerLat: m1.map.markerLat
+            }
+        }
+    },
+    {
+        name: m5.details.itemName,
+        id: m5.id,
+        next: m5.next,
+        previous: m5.previous,
+        linkToMaskDetails: m5.linkToMaskDetails,
+        model: {
+            glb: m5.model.glb,
+            usdz: m5.model.usdz,
+            placeholder: m5.model.maskImgSrc,
+        },
+        details: {
+            group: m5.details.group,
+            groupLocation: m5.details.groupLocation,
+            itemName: m5.details.itemName,
+            itemCreation: m5.details.itemCreation,
+            medium: m5.details.medium,
+            description: m5.details.description,
+            providedBy: m5.details.providedBy,
+            mapInfo: {
+                centerMapLong: m1.map.centerMapLat,
+                centerMapLat: m1.map.centerMapLat,
+                markerLong: m1.map.markerLong,
+                markerLat: m1.map.markerLat
+            }
+        }
+    },
+    {
+        name: m6.details.itemName,
+        id: m6.id,
+        next: m6.next,
+        previous: m6.previous,
+        linkToMaskDetails: m6.linkToMaskDetails,
+        model: {
+            glb: m6.model.glb,
+            usdz: m6.model.usdz,
+            placeholder: m6.model.maskImgSrc,
+        },
+        details: {
+            group: m6.details.group,
+            groupLocation: m6.details.groupLocation,
+            itemName: m6.details.itemName,
+            itemCreation: m6.details.itemCreation,
+            medium: m6.details.medium,
+            description: m6.details.description,
+            providedBy: m6.details.providedBy,
+            mapInfo: {
+                centerMapLong: m1.map.centerMapLat,
+                centerMapLat: m1.map.centerMapLat,
+                markerLong: m1.map.markerLong,
+                markerLat: m1.map.markerLat
+            }
+        }
+    },
+    {
+        name: m7.details.itemName,
+        id: m7.id,
+        next: m7.next,
+        previous: m7.previous,
+        linkToMaskDetails: m7.linkToMaskDetails,
+        model: {
+            glb: m7.model.glb,
+            usdz: m7.model.usdz,
+            placeholder: m7.model.maskImgSrc,
+        },
+        details: {
+            group: m7.details.group,
+            groupLocation: m7.details.groupLocation,
+            itemName: m7.details.itemName,
+            itemCreation: m7.details.itemCreation,
+            medium: m7.details.medium,
+            description: m7.details.description,
+            providedBy: m7.details.providedBy,
+            mapInfo: {
+                centerMapLong: m1.map.centerMapLat,
+                centerMapLat: m1.map.centerMapLat,
+                markerLong: m1.map.markerLong,
+                markerLat: m1.map.markerLat
+            }
+        }
+    },
+    {
+        name: m8.details.itemName,
+        id: m8.id,
+        next: m8.next,
+        previous: m8.previous,
+        linkToMaskDetails: m8.linkToMaskDetails,
+        model: {
+            glb: m8.model.glb,
+            usdz: m8.model.usdz,
+            placeholder: m8.model.maskImgSrc,
+        },
+        details: {
+            group: m8.details.group,
+            groupLocation: m8.details.groupLocation,
+            itemName: m8.details.itemName,
+            itemCreation: m8.details.itemCreation,
+            medium: m8.details.medium,
+            description: m8.details.description,
+            providedBy: m8.details.providedBy,
+            mapInfo: {
+                centerMapLong: m1.map.centerMapLat,
+                centerMapLat: m1.map.centerMapLat,
+                markerLong: m1.map.markerLong,
+                markerLat: m1.map.markerLat
             }
         }
     }

@@ -1,0 +1,34 @@
+{
+  "id": 2,
+  "next": 3,
+  "previous": 1,
+  "linkToMaskDetails": "/mask_gallery/mask1",
+  "model": {
+    "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+    "usdz": "https://igeller.github.io/assets/small%20model/Yoruba_Mask.usdz?raw=true",
+    "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/7968/preview"
+  },
+  "details": {
+    "itemName": "Helmet Mask",
+    "group": "Kuba people",
+    "groupLocation": "Democratic Republic of the Congo",
+    "itemCreation": "ca. 1970",
+    "medium": "wood, copper, textile, cowrie shells, beads and plant fiber",
+    "description": "This Helmet mask comes from the Kuba People in the Democratic Republic of the Congo. The Kuba are in fact comprised of a federation of 18 chiefdoms.  These chiefdoms are unified under the Bushong king, who first solidified power through the seventeenth-century. The Kuba people reached their height in the nineteenth century. This mask is likely an example of one of three royal masks used in masquerades and other ceremonies, such as initiation rites and funerals. Called a Bwoom mask, the Lowe’s example has the typical elements of recognizable facial features, a copper plate, cowrie shells, and other beading. The red beads here symbolize power and standing. Like other Kuba objects, the mask is typified by its elaborate materials and patterning. Aesthetic considerations and beauty in crafting were important and widely held cultural values. Indeed, it has been said that the Kuba “never leave a surface undecorated.” During a masquerade, Bwoom mask wearers are completed covered by their costumes, which can be composed of fabric, cowrie shells, beadwork feathers, and raffia. The Bwoom costumes are not as refined as the other costumes in the masquerade as a way to represent Bwoom’s status as a common man.\n \nThe three royal masks are used in masquerades to illustrate the stories of the kingdom’s origin.  All three are considered to embody nature spirits (mingesh). The first mask, the Mwashamboy, is highest in rank and represents Woot, the first Kuba king. Bwoom, is said to represent the common people. In the ceremony, Bwoom defies Mwashamboy to compete for the love of the third, female spirit, Ngaady a Mwash.",
+    "providedBy": "Gift of Lee and Aurora McMichen"
+  },
+  "map": {
+    "centerMapLong": "",
+    "centerMapLat": "",
+    "markerLong": "",
+    "markerLat": ""
+  }
+}
+
+
+
+
+
+
+
+

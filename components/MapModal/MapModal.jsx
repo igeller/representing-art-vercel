@@ -1,9 +1,9 @@
 import React from "react";
 import {useState} from "react";
 import PropTypes from "prop-types";
-import {Button, Modal, ModalDialog} from "react-bootstrap";
+import {Button, Modal, ModalDialog, Toast} from "react-bootstrap";
 import Link from "next/link";
-import ReactMapboxGl, { Layer, Feature, Marker } from 'react-mapbox-gl';
+import ReactMapboxGl, {Layer, Feature, Marker} from 'react-mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import styles from '../InfoModal/InfoModal.module.scss'
 import stylesMap from './MapModal.module.scss'
@@ -20,55 +20,59 @@ const MapModal = (props) => {
         attributionControl: false
     });
 
-    return(
-        <>
+        return (
+            <>
 
-            <Modal
-                className={`bg-transparent`}
-                dialogClassName={`${styles.pos}`}
-                contentClassName={`border-0`}
-                backdropClassName={'bg-transparent'}
-                scrollable={true}
-                animation={false}
-                show={props.openMapModal}
-                onHide={props.closeMapModal}
-            >
-                <Modal.Body
-                    className={`h-25 p-3`}
-                    style={{backgroundColor: `${props.bgColor}`}}
+
+                {/*<div className={`bg-transparent h-100 w-100 text-left`}*/}
+                {/*style={{zIndex: '100000'}}*/}
+                {/*     onClick={() => setToast(!tst)}*/}
+                {/*>*/}
+                <Toast
+                    show={props.openMapModal}
+                    onClose={props.closeMapModal}
+                    className={`position-absolute w-100 h-50 p-4 text-left`}
+                    style={{top: 'auto', left: '0px', bottom: `${props.height}px`, backgroundColor: `${props.bgColor}`, zIndex: `20000000`}}
                 >
+                    {console.log(props.mapDetails.mapInfo)}
 
-                    <Map style="mapbox://styles/mapbox/streets-v9"
-                         containerStyle={{
-                            height: '100%'
-                         }}
-                         className={"w-100"}
-                         center={[`${props.mapDetails.mapInfo.centerMapLong}`, `${props.mapDetails.mapInfo.centerMapLat}`]}
-                         zoom={[3.75]}
-                    >
+                    <Toast.Body className={`h-100 ${stylesMap.ovrflw}`}>
+                        <div className={`p-0 m-0 w-100 h-100`}>
+                            <Map style="mapbox://styles/mapbox/streets-v9"
+                                 className={"w-100 h-100"}
+                                 center={[props.mapDetails.markerLong, props.mapDetails.markerLat]}
+                                 zoom={[3.75]}
+                            >
 
-                        {/* Circle example */}
-                        <Marker
-                            coordinates={[`${props.mapDetails.mapInfo.markerLong}`, `${props.mapDetails.mapInfo.markerLat}`]}
-                            anchor="bottom"
-                            className={`bg-transparent`}
-                            color={'red'}
-                        >
-                            <FontAwesomeIcon icon={faMapMarkerAlt} size={"3x"} className={`${stylesMap.mapIcon}`}/>
-                        </Marker>
-                    </Map>
-                </Modal.Body>
+                                {/* Circle example */}
+                                <Marker
+                                    coordinates={[`${props.mapDetails.markerLong}`, `${props.mapDetails.markerLat}`]}
+                                    anchor="bottom"
+                                    className={`bg-transparent`}
+                                    color={'red'}
+                                >
+                                    <FontAwesomeIcon icon={faMapMarkerAlt} size={"3x"} className={`${stylesMap.mapIcon}`}/>
+                                </Marker>
+                            </Map>
+                        </div>
 
-            </Modal>
-        </>
-    )
-};
+                    </Toast.Body>
 
-MapModal.propTypes = {
-    openMapModal: PropTypes.bool.isRequired,
-    closeMapModal: PropTypes.func.isRequired,
-    mapDetails: PropTypes.object.isRequired,
-    bgColor: PropTypes.string.isRequired
-}
+                </Toast>
+                {/*</div>*/}
 
-export default MapModal;
+
+
+            </>
+        )
+    };
+
+    MapModal.propTypes = {
+        height: PropTypes.number,
+        openMapModal: PropTypes.bool.isRequired,
+        closeMapModal: PropTypes.func.isRequired,
+        mapDetails: PropTypes.object.isRequired,
+        bgColor: PropTypes.string.isRequired
+    }
+
+    export default MapModal;

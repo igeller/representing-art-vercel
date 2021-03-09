@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {Modal} from "react-bootstrap";
+import {Toast} from "react-bootstrap";
 import styles from './InfoModal.module.scss'
 const ReactFitText = require('react-fittext');
 
@@ -16,56 +16,59 @@ modal.body style sets the orange behind the text
  */
 
 const InfoModal = (props) => {
+    const [tst, setToast] = React.useState(props.openInfoModal)
+
     return(
         <>
 
-            <Modal
-                className={`bg-transparent`}
-                dialogClassName={`${styles.pos}`}
-                contentClassName={`border-0`}
-                backdropClassName={'bg-transparent'}
-                scrollable={true}
-                animation={false}
-                show={props.openInfoModal}
-                onHide={props.closeInfoModal}
-            >
-                <Modal.Body
-                    className={`text-left p-4`}
-                    style={{backgroundColor: `${props.bgColor}`}}
+            {/*<div className={`bg-transparent h-100 w-100 text-left`}*/}
+            {/*style={{zIndex: '100000'}}*/}
+            {/*     onClick={() => setToast(!tst)}*/}
+            {/*>*/}
+                <Toast
+                    show={props.openInfoModal}
+                    onClose={props.closeInfoModal}
+                    className={`position-absolute w-100 h-50 p-4 text-left`}
+                    style= {{top: 'auto', left:'0px',  bottom: `${props.height}px`, backgroundColor: `${props.bgColor}`}}
                 >
-                    <div className={`${styles.ovrflw} p-0 m-0`}>
-                        <ReactFitText minFontSize={10}>
-                            <h1 className={'mb-1 font-weight-bold'}>{props.group}</h1>
-                        </ReactFitText>
-                        <ReactFitText maxFontSize={20}>
-                            <p className={`mb-4 font-weight-medium`} >{props.groupLocation}</p>
-                        </ReactFitText>
-                        <ReactFitText minFontSize={10}>
-                            <h1 className={'mb-1 font-weight-bold'}>{props.itemName}</h1>
-                        </ReactFitText>
-                        <ReactFitText maxFontSize={22}>
-                            <p className={`mb-4 font-weight-light`} >{props.itemCreation}</p>
-                        </ReactFitText>
-                        <ReactFitText maxFontSize={18}>
-                            <p className={`mb-4 font-weight-light`} >{props.medium}</p>
-                        </ReactFitText>
-                        <ReactFitText maxFontSize={18}>
-                            <p className={`mb-4 font-weight-light`} >{props.description}</p>
-                        </ReactFitText>
-                        <ReactFitText maxFontSize={14}>
-                            <p className={`mb-4 font-weight-bold font-italic`}>{props.providedBy}</p>
-                        </ReactFitText>
-                    </div>
 
-                </Modal.Body>
+                    <Toast.Body className={`h-100 ${styles.ovrflw}`}>
+                        <div className={`p-0 m-0`}>
+                                        <ReactFitText minFontSize={10}>
+                                            <h1 className={'mb-1 font-weight-bold'}>{props.group}</h1>
+                                        </ReactFitText>
+                                        <ReactFitText maxFontSize={20}>
+                                            <p className={`mb-4 font-weight-medium`} >{props.groupLocation}</p>
+                                        </ReactFitText>
+                                        <ReactFitText minFontSize={10}>
+                                            <h1 className={'mb-1 font-weight-bold'}>{props.itemName}</h1>
+                                        </ReactFitText>
+                                        <ReactFitText maxFontSize={22}>
+                                            <p className={`mb-4 font-weight-light`} >{props.itemCreation}</p>
+                                        </ReactFitText>
+                                        <ReactFitText maxFontSize={18}>
+                                            <p className={`mb-4 font-weight-light`} >{props.medium}</p>
+                                        </ReactFitText>
+                                        <ReactFitText maxFontSize={18}>
+                                            <p className={`mb-4 font-weight-light`} >{props.description}</p>
+                                        </ReactFitText>
+                                        <ReactFitText maxFontSize={14}>
+                                            <p className={`mb-4 font-weight-bold font-italic`}>{props.providedBy}</p>
+                                        </ReactFitText>
+                                    </div>
 
-            </Modal>
-        </>
+                    </Toast.Body>
 
-    )
-};
+                </Toast>
+            {/*</div>*/}
+
+
+
+</>)
+}
 
 InfoModal.propTypes = {
+    height: PropTypes.number,
     bgColor: PropTypes.string.isRequired,
     openInfoModal: PropTypes.bool.isRequired,
     closeInfoModal: PropTypes.func.isRequired,

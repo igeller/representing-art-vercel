@@ -15,16 +15,17 @@ const ModelViewer = function(props) {
                     ios-src={props.usdz}
                     poster={props.placeholder}
                     loading={'eager'}
-                    reveal={'interaction'}
+                    reveal={'auto'}
                     style={{width: '100%', height: '70vh'}}
                     ar
                     ar-modes="webxr scene-viewer quick-look"
                     ar-scale="auto"
                     background-color="black"
-                    preload
-                    reveal-when-loaded
-                    auto-rotate
                     camera-controls
+                    interaction-prompt={'auto'}
+                    interaction-prompt-style={'wiggle'}
+
+
                 />
             </div>
 

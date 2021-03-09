@@ -16,13 +16,13 @@ export default function Home() {
     return (
 
 
-        <div className={`text-center h-100 gridHolder`}>
+        <div className={`text-center h-100 gridHolder mx-auto`}>
                 <TopBanner className={`topOfGrid mb-1`} id={'t1'}/>
 
 
             <div className={`middleOfGrid align-self-center`} id={'bodyDiv'}>
 
-                <img className={'loweLogo w-50'} src={`${loweImage}`}/>
+                <img className={'loweLogo w-50 mx-auto'} src={`${loweImage}`}/>
 
                 <ReactFitText minFontSize={25} compressor={1.25}>
                     <h1 className={`mt-5 pt-5 ${styles.title}`}>

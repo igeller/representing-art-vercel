@@ -1,0 +1,34 @@
+{
+  "id": 5,
+  "next": 6,
+  "previous": 4,
+  "linkToMaskDetails": "/mask_gallery/mask1",
+  "model": {
+    "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+    "usdz": "https://igeller.github.io/assets/small%20model/Yoruba_Mask.usdz?raw=true",
+    "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/7990/preview"
+  },
+  "details": {
+    "itemName": "Face Mask (Mmwa)",
+    "group": "Igbo people",
+    "groupLocation": "Nigeria",
+    "itemCreation": "ca. 1970",
+    "medium": "wood and pigment",
+    "description": "This mask depicts Agoboho Mmuo, or Spirit of Dead Woman.\n",
+    "providedBy": "Gift of Dr. and Mrs. Samuel Berkowitz"
+  },
+  "map": {
+    "centerMapLong": "",
+    "centerMapLat": "",
+    "markerLong": "",
+    "markerLat": ""
+  }
+}
+
+
+
+
+
+
+
+

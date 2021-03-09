@@ -1,0 +1,34 @@
+{
+  "id": 1,
+  "next": 2,
+  "previous": 0,
+  "linkToMaskDetails": "/mask_gallery/mask1",
+  "model": {
+    "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+    "usdz": "https://igeller.github.io/assets/small%20model/Yoruba_Mask.usdz?raw=true",
+    "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/7991/preview"
+  },
+  "details": {
+    "itemName": "Face Mask (Agbogho Mmuo)",
+    "group": "Igbo People",
+    "groupLocation": "Nigeria",
+    "itemCreation": "mid 20th century",
+    "medium": "Wood, pigment and cotton",
+    "description": "Face Masks like this Agbogho Mmuo or “maiden spirit” are made by the Igbo people of southern Nigeria. Although this mask type varies in shape and color, the masks consistently feature an elaborate hairstyle extending far above the mask’s face. The white portions of the mask likely allude to the spiritual nature of the figure. Agbogo Mmuo masks that celebrate ideal female beauty are among the most celebrated masquerade types for the Igbo people. They represent the spirit of a female ancestor but are worn by men only who imitate the graceful gestures and movement of women while music plays and others sing. The Agbogo Mmuo is danced during the dry season for agricultural rituals and during funerals for prominent members of the masking society.",
+    "providedBy": "Gift of Mr. and Mrs. Raymond Bell"
+  },
+  "map": {
+    "centerMapLong": "",
+    "centerMapLat": "",
+    "markerLong": "",
+    "markerLat": ""
+  }
+}
+
+
+
+
+
+
+
+

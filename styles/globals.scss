@@ -7,7 +7,7 @@
 
 html{
   height: 100% !important;
-  margin: 0 auto;
+  margin: 0 auto !important;
   box-sizing: border-box;
 
   body {
@@ -16,7 +16,7 @@ html{
     //overflow-y: hidden;
     height: 100%;
     box-sizing: content-box;
-    margin: 0 auto;
+    margin: 0 auto !important;
 
 
     .loweLogo {
@@ -34,8 +34,10 @@ html{
 
 
     .gridHolder {
+      margin: 0 auto !important;
       display: grid !important;
       grid-auto-rows: 1fr;
+      alignment: center;
       //grid-template-rows: 1fr 28fr 1fr;
       max-height: 100vh !important;
       min-height: 100vh !important;
@@ -68,7 +70,7 @@ html{
       text-align: inherit;
       max-width: 100% !important;
       @include screen('lrgr'){max-width: 900px !important;};
-      margin: initial;
+      margin: auto;
     }
   }
 }
