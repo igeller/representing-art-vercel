@@ -31,7 +31,7 @@ const MapModal = (props) => {
                 <Toast
                     show={props.openMapModal}
                     onClose={props.closeMapModal}
-                    className={`position-absolute w-100 h-50 p-4 text-left mx-auto`}
+                    className={`position-absolute w-100 h-50 p-4 text-left mx-auto my-0`}
                     style={{top: 'auto', bottom: `${props.height}px`, backgroundColor: `${props.bgColor}`, zIndex: `20000000`}}
                 >
                     {console.log(props.mapDetails.mapInfo)}
