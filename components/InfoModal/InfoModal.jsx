@@ -28,8 +28,8 @@ const InfoModal = (props) => {
                 <Toast
                     show={props.openInfoModal}
                     onClose={props.closeInfoModal}
-                    className={`position-absolute w-100 h-50 p-4 text-left`}
-                    style= {{top: 'auto', left:'0px',  bottom: `${props.height}px`, backgroundColor: `${props.bgColor}`}}
+                    className={`position-absolute w-100 h-50 p-4 text-left mx-auto my-0`}
+                    style= {{top: 'auto',  bottom: `${props.height}px`, backgroundColor: `${props.bgColor}`}}
                 >
 
                     <Toast.Body className={`h-100 ${styles.ovrflw}`}>
