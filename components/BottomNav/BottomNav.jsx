@@ -70,6 +70,7 @@ const BottomNav = (props) => {
                     variant="primary"
 
                     onClick={() => {
+                        setShowMap(false)
                         setShowInfo(!showInfo)
                         setDivStyle(document.getElementById(`infoButton`).getBoundingClientRect().height)
                     }}
@@ -89,6 +90,7 @@ const BottomNav = (props) => {
                 <Button
                     variant="primary"
                     onClick={() => {
+                        setShowInfo(false)
                         setShowMap(!showMap)
                         setDivStyle(document.getElementById(`infoButton`).getBoundingClientRect().height)
                     }}
@@ -116,11 +118,11 @@ const BottomNav = (props) => {
                     </a>
                 </Link>
             </ButtonGroup>
-
+            
             <MapModal
                 height={dStyle > 0 ?dStyle : 0}
                 openMapModal={showMap}
-                closeMapModal={() => setShowMap(false)}
+                closeMapModal={() => setShowMap(!showMap)}
                 bgColor={'#A3D7F4'}
                 mapDetails={props.maskDetails.mapInfo}
             />
