@@ -1,8 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import styles from './TopBanner.module.scss'
 import PropTypes from "prop-types";
-import {withResizeDetector} from 'react-resize-detector';
-import {findDOMNode} from 'react-dom'
 
 const TopBanner = (props) =>{
 

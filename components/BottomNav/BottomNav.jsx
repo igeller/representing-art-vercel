@@ -1,29 +1,14 @@
-import React, {useEffect, useRef} from "react";
-import {useState} from "react";
+import React, {useState} from "react";
 import PropTypes from "prop-types";
-import {
-    ButtonGroup,
-    Button,
-    SplitButton,
-    DropdownButton,
-    Dropdown,
-    Modal,
-    ModalBody,
-    Card,
-    Accordion,
-    AccordionToggle,
-    Tabs,
-    Tab, TabContainer, TabContent,
-    Nav, OverlayTrigger, AccordionCollapse,
-    Overlay
-} from "react-bootstrap";
+import {Button, ButtonGroup} from "react-bootstrap";
 import Link from "next/link";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import MapModal from "../MapModal/MapModal";
 import InfoModal from "../InfoModal/InfoModal";
 import * as styles from './BottomNav.module.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faChevronLeft, faChevronRight, faInfoCircle, faCompass} from "@fortawesome/free-solid-svg-icons";
+import {faChevronLeft, faChevronRight, faCompass, faInfoCircle} from "@fortawesome/free-solid-svg-icons";
+
 const ReactFitText = require('react-fittext');
 
 const BottomNav = (props) => {

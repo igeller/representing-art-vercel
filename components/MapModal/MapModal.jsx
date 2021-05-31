@@ -1,14 +1,11 @@
 import React from "react";
-import {useState} from "react";
 import PropTypes from "prop-types";
-import {Button, Modal, ModalDialog, Toast} from "react-bootstrap";
-import Link from "next/link";
-import ReactMapboxGl, {Layer, Feature, Marker} from 'react-mapbox-gl';
+import {Toast} from "react-bootstrap";
+import ReactMapboxGl, {Marker} from 'react-mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import styles from '../InfoModal/InfoModal.module.scss'
 import stylesMap from './MapModal.module.scss'
 import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";//CHANGE FOR THE DE
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"; //CHANGE FOR THE DE
 
 const MapModal = (props) => {
 

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {Navbar, Nav, Accordion} from "react-bootstrap";
+import {Accordion, Nav, Navbar} from "react-bootstrap";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import styles from './TopMenu.module.scss'
 import menuInfo from "../../constants/menu_info";

@@ -1,9 +1,7 @@
-import React, {useState, useEffect, useContext} from 'react';
+import React from 'react';
 import PropTypes from "prop-types";
 import TopBanner from "../TopBanner/TopBanner";
 import TopMenu from "../TopMenu/TopMenu";
-
-
 
 
 const TopNavBar = (props) =>{

@@ -1,13 +1,10 @@
-import {CardGroup, CardDeck, CardColumns} from "react-bootstrap";
+import {CardGroup} from "react-bootstrap";
 import MaskGalleryCards from "../../components/MaskGalleryCards/MaskGalleryCards";
 import masks from "../../constants/mask_specs";
-import TopMenu from '../../components/TopMenu/TopMenu'
 import {Textfit} from 'react-textfit';
 import TopNavBar from "../../components/TopNavBar/TopNavBar";
 import BottomBanner from "../../components/BottomBanner/BottomBanner";
-import {useEffect, useState} from "react";
-import styles from "../../styles/Home.module.scss";
-import  mainStyles from "../../styles/Home.module.scss";
+
 
 export default function index() {
 

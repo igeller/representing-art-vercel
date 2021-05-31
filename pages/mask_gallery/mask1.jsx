@@ -1,9 +1,8 @@
 import MaskInfoView from "../../components/MaskInfoView/MaskInfoView";
 import maskSpecs from "../../constants/mask_specs";
 import TopNavBar from "../../components/TopNavBar/TopNavBar";
-import React, {useEffect, useState} from "react";
+import React from "react";
 import BottomNav from "../../components/BottomNav/BottomNav";
-import styles from "../../styles/Home.module.scss";
 
 export default function mask1(props) {
 
