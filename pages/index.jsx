@@ -41,8 +41,70 @@ export default function Home() {
                         </ReactFitText>
                     </Button>
                 </Link>
+    
+                <a
+                    href={`#instructions`}
+                    style={{scrollPadding: `40px`}}
+                >
+                    <Button className={`${styles.btn} mt-4 text-wrap badge-pill btn-lg mx-auto py-2 w-auto`}>
+                        <ReactFitText minFontSize={15} compressor={1.25}>
+                            <div className={`px-5`}> Instructions
+                            </div>
+                        </ReactFitText>
+                    </Button>
+                </a>
+    
+                <a
+                    href={`#about`}
+                    style={{scrollPadding: `40px`}}
+                >
+                    <Button className={`${styles.btn} mt-4 text-wrap badge-pill btn-lg mx-auto py-2 w-auto`}>
+                        <ReactFitText minFontSize={15} compressor={1.25}>
+                            <div className={`px-5`}> About
+                            </div>
+                        </ReactFitText>
+                    </Button>
+                </a>
+    
+                <a
+                    href={`#education`}
+                    style={{scrollPadding: `40px`}}
+                >
+                    <Button className={`${styles.btn} mt-4 text-wrap badge-pill btn-lg mx-auto py-2 w-auto`}>
+                        <ReactFitText minFontSize={15} compressor={1.25}>
+                            <div className={`px-5`}> Education
+                            </div>
+                        </ReactFitText>
+                    </Button>
+                </a>
+               
+                
                 <img className={'mellonLogo position-relative w-50 pt-5 mx-auto align-self-end'} src={`${mellonImage}`}/>
-
+                <div id={`instructions`} className={`text-left mb-5`}>
+                    <ReactFitText maxFontSize={15} compressor={1.25}>
+                        <h1 className={`px-5`}> Instructions </h1>
+                    </ReactFitText>
+                    <ReactFitText maxFontSize={12} compressor={1.25}>
+                        <p className={`px-5`}> Lorem ipsume asdfjhaskdfhasodfha</p>
+                    </ReactFitText>
+                </div>
+    
+                <div id={`about`} className={`text-left my-5`}>
+                    <ReactFitText maxFontSize={15} compressor={1.25}>
+                        <h1 className={`px-5`}> About </h1>
+                    </ReactFitText>
+                    <ReactFitText maxFontSize={12} compressor={1.25}>
+                        <p className={`px-5`}> Lorem ipsume asdfjhaskdfhasodfha</p>
+                    </ReactFitText>
+                </div>
+                <div id={`education`} className={`text-left mt-5`}>
+                    <ReactFitText maxFontSize={15} compressor={1.25}>
+                        <h1 className={`px-5`}> Education </h1>
+                    </ReactFitText>
+                    <ReactFitText maxFontSize={12} compressor={1.25}>
+                        <p className={`px-5`}> Lorem ipsume asdfjhaskdfhasodfha</p>
+                    </ReactFitText>
+                </div>
             </div>
             <BottomBanner className={`bottomOfGrid mt-1`} id={'b1'}/>
         </div>
