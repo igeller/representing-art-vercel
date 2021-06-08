@@ -22,3 +22,8 @@
   border-radius: 0px;
   margin: 0px;
 }
+
+.navGrid{
+  display: grid !important;
+  grid-template: minmax(0, 1fr) /  repeat(5, minmax(0, 1fr));
+}
