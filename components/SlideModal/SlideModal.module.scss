@@ -1,5 +1,5 @@
 .modalContent{
-  max-height: 50% !important;
+  max-height: 75% !important;
   overflow-x: hidden;
   //overflow-y: scroll;
 }
@@ -7,4 +7,8 @@
 .modalContentText{
   color:black;
   overflow-y: scroll;
+  //min-height: 50vh;
+  //position: relative;
 }
+
+

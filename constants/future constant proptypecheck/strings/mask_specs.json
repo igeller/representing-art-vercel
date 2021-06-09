@@ -1,0 +1,202 @@
+{
+ "m1": {
+   "id": 0,
+   "next": 1,
+   "previous": 7,
+   "linkToMaskDetails": "/mask_gallery/mask1",
+   "model": {
+	 "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+	 "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/1508/preview"
+   },
+   "details": {
+	 "itemName": "Head Crest Mask (Chi Wara Kun)",
+	 "group": "Bamana People",
+	 "groupLocation": "Mali",
+	 "itemCreation": "ca. 1960",
+	 "medium": "wood, metal, cowrie shells, cotton, and plant fiber",
+	 "description": "In Bamana mythology Chi Wara is a creature born of the union between a, woman who was the first human and a snake. Chi Wara used his claws and a pointed stick to cultivate the earth, turning wild grasses into grain. He taught his technique to humans. His image is that of an antelope often combined with creatures associated with the earth such as lizards or aardvarks. Members of an organization of young men associated with agriculture wear the headdress.",
+	 "providedBy": "Gift of Professor and Mrs. Robert R.Ferens"
+   },
+   "map": {
+	 "centerMapLong": "-3.9962",
+	 "centerMapLat": "17.5707",
+	 "markerLong": "-2.7855",
+	 "markerLat": "15.8494"
+   }
+ },
+  "m2": {
+	"id": 1,
+	"next": 2,
+	"previous": 0,
+	"linkToMaskDetails": "/mask_gallery/mask1",
+	"model": {
+	  "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+	  "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/7991/preview"
+	},
+	"details": {
+	  "itemName": "Face Mask (Agbogho Mmuo)",
+	  "group": "Igbo People",
+	  "groupLocation": "Nigeria",
+	  "itemCreation": "mid 20th century",
+	  "medium": "Wood, pigment and cotton",
+	  "description": "Face Masks like this Agbogho Mmuo or “maiden spirit” are made by the Igbo people of southern Nigeria. Although this mask type varies in shape and color, the masks consistently feature an elaborate hairstyle extending far above the mask’s face. The white portions of the mask likely allude to the spiritual nature of the figure. Agbogo Mmuo masks that celebrate ideal female beauty are among the most celebrated masquerade types for the Igbo people. They represent the spirit of a female ancestor but are worn by men only who imitate the graceful gestures and movement of women while music plays and others sing. The Agbogo Mmuo is danced during the dry season for agricultural rituals and during funerals for prominent members of the masking society.",
+	  "providedBy": "Gift of Mr. and Mrs. Raymond Bell"
+	},
+	"map": {
+	  "centerMapLong": "",
+	  "centerMapLat": "",
+	  "markerLong": "",
+	  "markerLat": ""
+	}
+  },
+  "m3": {
+	"id": 2,
+	"next": 3,
+	"previous": 1,
+	"linkToMaskDetails": "/mask_gallery/mask1",
+	"model": {
+	  "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+	  "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/7968/preview"
+	},
+	"details": {
+	  "itemName": "Helmet Mask",
+	  "group": "Kuba people",
+	  "groupLocation": "Democratic Republic of the Congo",
+	  "itemCreation": "ca. 1970",
+	  "medium": "wood, copper, textile, cowrie shells, beads and plant fiber",
+	  "description": "This Helmet mask comes from the Kuba People in the Democratic Republic of the Congo. The Kuba are in fact comprised of a federation of 18 chiefdoms.  These chiefdoms are unified under the Bushong king, who first solidified power through the seventeenth-century. The Kuba people reached their height in the nineteenth century. This mask is likely an example of one of three royal masks used in masquerades and other ceremonies, such as initiation rites and funerals. Called a Bwoom mask, the Lowe’s example has the typical elements of recognizable facial features, a copper plate, cowrie shells, and other beading. The red beads here symbolize power and standing. Like other Kuba objects, the mask is typified by its elaborate materials and patterning. Aesthetic considerations and beauty in crafting were important and widely held cultural values. Indeed, it has been said that the Kuba “never leave a surface undecorated.” During a masquerade, Bwoom mask wearers are completed covered by their costumes, which can be composed of fabric, cowrie shells, beadwork feathers, and raffia. The Bwoom costumes are not as refined as the other costumes in the masquerade as a way to represent Bwoom’s status as a common man.\n \nThe three royal masks are used in masquerades to illustrate the stories of the kingdom’s origin.  All three are considered to embody nature spirits (mingesh). The first mask, the Mwashamboy, is highest in rank and represents Woot, the first Kuba king. Bwoom, is said to represent the common people. In the ceremony, Bwoom defies Mwashamboy to compete for the love of the third, female spirit, Ngaady a Mwash.",
+	  "providedBy": "Gift of Lee and Aurora McMichen"
+	},
+	"map": {
+	  "centerMapLong": "",
+	  "centerMapLat": "",
+	  "markerLong": "",
+	  "markerLat": ""
+	}
+  },
+  "mask4": {
+	"id": 3,
+	"next": 4,
+	"previous": 2,
+	"linkToMaskDetails": "/mask_gallery/mask1",
+	"model": {
+	  "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+	  "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/1519/preview"
+	},
+	"details": {
+	  "itemName": "Cap Crest Mask (Gelede)",
+	  "group": "Yoruba people",
+	  "groupLocation": "Yoruba people",
+	  "itemCreation": "ca. 1960",
+	  "medium": "wood and paint",
+	  "description": "This brightly colored cap crest mask is used in the masquerades of the Gelede society in the southwest region of Yorubaland (Nigeria). The practices of the society are not widespread among the Yoruba peoples, but are instead restricted to this region. The society is comprised of both men and women, but is led by an elderly woman. Yoruba associate women with awesome powers, and believe them to hold the keys to life itself. In an elaborate, two-day ceremony, performers pay tribute to “Our Mothers,” the matrilineal ancestors who wield extraordinary power that can have both positive and negative effects. In these ceremonies, the Gelede seek to please Our Mothers (as well as entertain the people), so they use their powers to benefit the community.\nThe masks are carved to represent specific ancestors. The red of this mask indicates the woman is a devotee of the deity Shango, and the black lines reference the city Ogbomosho. A snake is curled on top of the mask, as they were often associated with the powers of women in Yoruba society. Gelede masks are paired with full-body costumes and the performers wear iron bells around their ankles, which match the rhythm of the drum beat to which they perform.\n",
+	  "providedBy": "Gift of Professor and Mrs. Robert R. Ferens\n"
+	},
+	"map": {
+	  "centerMapLong": "",
+	  "centerMapLat": "",
+	  "markerLong": "",
+	  "markerLat": ""
+	}
+  },
+  "mask5": {
+	"id": 4,
+	"next": 5,
+	"previous": 3,
+	"linkToMaskDetails": "/mask_gallery/mask1",
+	"model": {
+	  "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+	  "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/21/preview"
+	},
+	"details": {
+	  "itemName": "Double-faced Helmet Mask",
+	  "group": "Ejagham people",
+	  "groupLocation": "Nigeria",
+	  "itemCreation": "20th century",
+	  "medium": "wood, hide and pigment",
+	  "description": "The Cross River region of Nigeria is famous for skin-covered masks in several different forms generally associated with Ekpe, a graded men's society that serves as the effective government in the otherwise leaderless villages throughout this heavily forested area. A double-faced helmet mask such as this is the type usually worn by members of the highest ranking grade of Ekpe. The bulging foreheads and aquiline noses of the two faces suggest that the origin of this mask is the upper bend of the Cross River, not far from the Nigeria-Cameroon border. Ejagham is the most comprehensive name for the people in this area, but individuals prefer to identify themselves with their village or clan. Ekpe does not unify the region; rather, each village has its own cult house and its own set of masks. The dark, painted face is male, and the light face with typical painted facial patterns is female. The holes on the top of the helmet probably held small wooden pegs carved to simulate a hairstyle associated with women. However, the shape of the upper portion of the mask suggests a form of fur cap worn by men. The theme of duality conveys spiritual completeness and possibly the ability to see into the past and the future. The mask is not recognized as representing a particular spirit, but is recognized as a symbol of the corporate group Ekpe and of the powers of its leaders.\n",
+	  "providedBy": "Museum purchase"
+	},
+	"map": {
+	  "centerMapLong": "",
+	  "centerMapLat": "",
+	  "markerLong": "",
+	  "markerLat": ""
+	}
+  },
+  "mask6": {
+	"id": 5,
+	"next": 6,
+	"previous": 4,
+	"linkToMaskDetails": "/mask_gallery/mask1",
+	"model": {
+	  "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+	  "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/7990/preview"
+	},
+	"details": {
+	  "itemName": "Face Mask (Mmwa)",
+	  "group": "Igbo people",
+	  "groupLocation": "Nigeria",
+	  "itemCreation": "ca. 1970",
+	  "medium": "wood and pigment",
+	  "description": "This mask depicts Agoboho Mmuo, or Spirit of Dead Woman.\n",
+	  "providedBy": "Gift of Dr. and Mrs. Samuel Berkowitz"
+	},
+	"map": {
+	  "centerMapLong": "",
+	  "centerMapLat": "",
+	  "markerLong": "",
+	  "markerLat": ""
+	}
+  },
+  "mask7": {
+	"id": 6,
+	"next": 7,
+	"previous": 5,
+	"linkToMaskDetails": "/mask_gallery/mask1",
+	"model": {
+	  "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+	  "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/7963/preview"
+	},
+	"details": {
+	  "itemName": "Helmet Mask",
+	  "group": "Babindji people",
+	  "groupLocation": "Democratic Republic of the Congo",
+	  "itemCreation": "20th century",
+	  "medium": "wood, abrus seeds and pigment",
+	  "description": "The Babindji, also known as the Binji people, are not a fully organized political unit; rather, these peoples share traits in language and culture as a defining feature. Concentrated in Central Africa (The Democratic Republic of the Congo), Babindji origin myths indicate that they might have Kuba ancestry. This is further corroborated by the similarities of Babindji helmet masks to Kuba helmet masks (one such mask, the Bwoom mask, is also included in this exhibit). The Babindji mask here is similar to Kuba Bwoom masks in the large geometric forms that create recognizable facial features; however, it differs in the level of decoration. The wooden helmet mask has carved geometric patterning but does not include affixed beads and cowrie shells. Some have considered the Babindji Helmet masks prototypes for Kuba masks. These helmet masks are most often used in initiation ceremonies.\n",
+	  "providedBy": "Gift of an Anonymous Donor"
+	},
+	"map": {
+	  "centerMapLong": "",
+	  "centerMapLat": "",
+	  "markerLong": "",
+	  "markerLat": ""
+	}
+  },
+  "mask8":{
+	"id": 7,
+	"next": 0,
+	"previous": 6,
+	"linkToMaskDetails": "/mask_gallery/mask1",
+	"model": {
+	  "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
+	  "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/423/preview"
+	},
+	"details": {
+	  "itemName": "Face Mask (Kanaga)",
+	  "group": "Dogon people",
+	  "groupLocation": "Mali",
+	  "itemCreation": "20th Century",
+	  "medium": "Wood, pigment, plant fiber, and copper alloy\n",
+	  "description": "This kanaga (woman of the spirits) mask is one of a group of nearly identical masks worn by members of the men's Awa society in the performance of the dama, a second burial rite that ends a two- to three-year period of mourning. The dama turns the deceased into a living ancestor and insures safe passage to the ancestral world. For the surviving kin and community, the dama reestablishes the family and social harmony disrupted by death. The performance lasts six days. Kanaga masks are worn in the first, or separation, phase of the performance and in the final, or reintegration, phase when the group of masqueraders ushers the soul of the dead from the village in a dramatically choreographed dance. The form of the mask consists of a boxlike face with a high forehead. Surmounting this is a superstructure of small planks laced together to form a four-part, outward pointing \"diagram\" that suggests the radial motion of the spiritual universe. Simultaneously, the form also suggests a bird, which bridges worldly and spiritual dimensions. The appearance of kanaga masks in groups is equated with the order and flocking of birds and is a suitable metaphor for the harmony and balance that the mask symbolizes.",
+	  "providedBy": "Museum purchase"
+	},
+	"map": {
+	  "centerMapLong": "",
+	  "centerMapLat": "",
+	  "markerLong": "",
+	  "markerLat": ""
+	}
+  }
+}

@@ -21,10 +21,7 @@ const MapModal = (props) => {
             <>
 
 
-                {/*<div className={`bg-transparent h-100 w-100 text-left`}*/}
-                {/*style={{zIndex: '100000'}}*/}
-                {/*     onClick={() => setToast(!tst)}*/}
-                {/*>*/}
+               
                 <Toast
                     show={props.openMapModal}
                     onClose={props.closeMapModal}

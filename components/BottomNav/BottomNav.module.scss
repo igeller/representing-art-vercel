@@ -27,3 +27,31 @@
   display: grid !important;
   grid-template: minmax(0, 1fr) /  repeat(5, minmax(0, 1fr));
 }
+
+.pos{
+  background-color: transparent !important;
+  position: relative !important;
+  display: block;
+  min-height: 100vh !important;
+  //bottom: 0px !important;
+  //left: 0px !important;
+  //width: 100%;
+  //height: 100%;
+  //padding: 0px !important;
+  //margin: 0px !important;
+  //margin-bottom: (1rem*4 )!important;
+  //border-radius: 0px !important;
+  overflow: hidden !important;
+}
+
+.ovrflw{
+  overflow-y: scroll;
+}
+
+.mapIcon path{
+  color: red !important;
+}
+
+.map{
+  min-height: 50vh !important;
+}

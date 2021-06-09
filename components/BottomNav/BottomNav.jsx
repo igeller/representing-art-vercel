@@ -7,8 +7,11 @@ import MapModal from "../MapModal/MapModal";
 import InfoModal from "../InfoModal/InfoModal";
 import * as styles from './BottomNav.module.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faChevronLeft, faChevronRight, faCompass} from "@fortawesome/free-solid-svg-icons";
+import {faChevronLeft, faChevronRight, faCompass, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
 import SlideModal from "../SlideModal/SlideModal";
+import ReactMapboxGl, {Marker} from "react-mapbox-gl";
+import stylesMap from "../MapModal/MapModal.module.scss";
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 const ReactFitText = require('react-fittext');
 
@@ -20,8 +23,16 @@ const BottomNav = (props) => {
     const navGridRef = useRef(null)
     const [loading, setLoading] = useState(false);
     const [dStyle, setDivStyle] = useState(0)
-   
-
+    
+    const Map = ReactMapboxGl({
+        accessToken:
+            'pk.eyJ1IjoicmVwcmVzZW50aW5nYXJ0IiwiYSI6ImNrazFrcnVoczBzNHgydXQxOWFyZTkyZWIifQ.tkwUtgPIhfaA0S-qOKjkQw',
+        interactive: false,
+        logoPosition: 'top-right',
+        attributionControl: false
+    });
+    
+    
     return(
     
 <>
@@ -106,7 +117,32 @@ const BottomNav = (props) => {
             bgColor={`#A3D7F4`}
             maskActionBarRef={navGridRef}
             icon={`FaCompass`}
-        />
+        >
+            
+            {/*<div>*/}
+            {/*    hey wtf is going on??/*/}
+            {/*</div>*/}
+            <div className={`${styles.map}`}>
+                <Map style="mapbox://styles/mapbox/streets-v9"
+                     className={`w-100 ${styles.pos}`}
+                     center={[props.maskDetails.mapInfo.markerLong, props.maskDetails.mapInfo.markerLat]}
+                     zoom={[3.75]}
+                >
+            
+                    {/* Circle example */}
+                    <Marker
+                        coordinates={[`${props.maskDetails.mapInfo.markerLong}`, `${props.maskDetails.mapInfo.markerLat}`]}
+                        anchor="bottom"
+                        className={`bg-transparent`}
+                        color={'red'}
+                    >
+                        <FontAwesomeIcon icon={faMapMarkerAlt} size={"3x"} className={`${styles.mapIcon}`}/>
+                    </Marker>
+                </Map>
+            </div>
+            
+            
+        </SlideModal>
             {/*<Button*/}
     
             {/*    variant="primary"*/}
@@ -129,22 +165,22 @@ const BottomNav = (props) => {
             {/*</Button>*/}
     
     
-            <Button
-                variant="primary"
-                onClick={() => {
-                    setShowInfo(false)
-                    setShowMap(!showMap)
-                    setDivStyle(document.getElementById(`infoButton`).getBoundingClientRect().height)
-                }}
-                className={`${styles.buttonborder} mr-1 p-2 w-100`}
-                style={{backgroundColor: `#A3D7F4`}}>
-                <FontAwesomeIcon icon={faCompass} size={`2x`} className={`bg-transparent d-block mx-auto`}/>
-                <ReactFitText minFontSize={10}>
-                    <div className={`bg-transparent mt-1`}>
-                        Map View
-                    </div>
-                </ReactFitText>
-            </Button>
+            {/*<Button*/}
+            {/*    variant="primary"*/}
+            {/*    onClick={() => {*/}
+            {/*        setShowInfo(false)*/}
+            {/*        setShowMap(!showMap)*/}
+            {/*        setDivStyle(document.getElementById(`infoButton`).getBoundingClientRect().height)*/}
+            {/*    }}*/}
+            {/*    className={`${styles.buttonborder} mr-1 p-2 w-100`}*/}
+            {/*    style={{backgroundColor: `#A3D7F4`}}>*/}
+            {/*    <FontAwesomeIcon icon={faCompass} size={`2x`} className={`bg-transparent d-block mx-auto`}/>*/}
+            {/*    <ReactFitText minFontSize={10}>*/}
+            {/*        <div className={`bg-transparent mt-1`}>*/}
+            {/*            Map View*/}
+            {/*        </div>*/}
+            {/*    </ReactFitText>*/}
+            {/*</Button>*/}
     
             <Link href={{ query: { maskNumber: props.previousMask }}}>
                 <a
@@ -166,27 +202,27 @@ const BottomNav = (props) => {
     
     {/*        </div>*/}
             
-            <MapModal
-                height={dStyle > 0 ?dStyle : 0}
-                openMapModal={showMap}
-                closeMapModal={() => setShowMap(!showMap)}
-                bgColor={'#A3D7F4'}
-                mapDetails={props.maskDetails.mapInfo}
-            />
-            <InfoModal
-                height={dStyle > 0 ?dStyle : 0}
-                eventKey="0"
-                openInfoModal={showInfo}
-                bgColor={'#F37424'}
-                closeInfoModal={() => setShowInfo(false)}
-                group={props.maskDetails.group}
-                groupLocation={props.maskDetails.groupLocation}
-                itemName={props.maskDetails.itemName}
-                itemCreation={props.maskDetails.itemCreation}
-                medium={props.maskDetails.medium}
-                description={props.maskDetails.description}
-                providedBy={props.maskDetails.providedBy}
-            />
+            {/*<MapModal*/}
+            {/*    height={dStyle > 0 ?dStyle : 0}*/}
+            {/*    openMapModal={showMap}*/}
+            {/*    closeMapModal={() => setShowMap(!showMap)}*/}
+            {/*    bgColor={'#A3D7F4'}*/}
+            {/*    mapDetails={props.maskDetails.mapInfo}*/}
+            {/*/>*/}
+            {/*<InfoModal*/}
+            {/*    height={dStyle > 0 ?dStyle : 0}*/}
+            {/*    eventKey="0"*/}
+            {/*    openInfoModal={showInfo}*/}
+            {/*    bgColor={'#F37424'}*/}
+            {/*    closeInfoModal={() => setShowInfo(false)}*/}
+            {/*    group={props.maskDetails.group}*/}
+            {/*    groupLocation={props.maskDetails.groupLocation}*/}
+            {/*    itemName={props.maskDetails.itemName}*/}
+            {/*    itemCreation={props.maskDetails.itemCreation}*/}
+            {/*    medium={props.maskDetails.medium}*/}
+            {/*    description={props.maskDetails.description}*/}
+            {/*    providedBy={props.maskDetails.providedBy}*/}
+            {/*/>*/}
 
         </>
 

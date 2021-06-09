@@ -7,17 +7,7 @@ import styles from './SlideModal.module.scss'
 const ReactFitText = require('react-fittext')
 
 
-// let sty = {
-// 	'icn': {
-//
-// 	}
-//
-// 	fill: `red !important`
-// }
-// }
-// }
-
-const  SlideModal =  (props) => {
+const  BottomNavigationButton =  (props) => {
 	
 	const node = useRef();
 	
@@ -75,8 +65,8 @@ const  SlideModal =  (props) => {
 					setModalPosition(getRefPosition(props.maskActionBarRef))
 					setShowModal(!showModal)
 				}}
-			
-			className={`p-2 w-100`}
+				
+				className={`p-2 w-100`}
 				style={{
 					backgroundColor: `${props.bgColor}`,
 					border: `none`,
@@ -84,8 +74,8 @@ const  SlideModal =  (props) => {
 					margin: `0px`
 				}}>
 				
-					<CurrentIcon  style={ { color: `white !important`, stroke: `white !important`, fill: 'white' +
-							' !important' }}/>
+				<CurrentIcon  style={ { color: `white !important`, stroke: `white !important`, fill: 'white' +
+						' !important' }}/>
 				
 				
 				<ReactFitText minFontSize={10}>
@@ -101,24 +91,24 @@ const  SlideModal =  (props) => {
 			{/*below is the modal*/}
 			{/*{modalContent}*/}
 			<div
-			className={`w-100 p-3 ${styles.modalContent}`}
-			ref={node}
-			style={{
-				position: `absolute`,
-				display: `${showModal ? `block` :`none`}`,
-				backgroundColor: `${props.bgColor}`,
-				bottom: `${modalPosition.height + `px`}`,
-				left: `${modalPosition.left + `px`}`,
-			}}
-			onClick={()=>{
-				setShowModal(!showModal)
-			}}
-		>
+				className={`w-100 p-3 ${styles.modalContent}`}
+				ref={node}
+				style={{
+					position: `absolute`,
+					display: `${showModal ? `block` :`none`}`,
+					backgroundColor: `${props.bgColor}`,
+					bottom: `${modalPosition.height + `px`}`,
+					left: `${modalPosition.left + `px`}`,
+				}}
+				onClick={()=>{
+					setShowModal(!showModal)
+				}}
+			>
 				<div className={`p-3 h-100 text-left ${styles.modalContentText}`}>
 					{modalContent}
 				</div>
+			</div>
 		</div>
-	</div>
 	
 	)}
 // )

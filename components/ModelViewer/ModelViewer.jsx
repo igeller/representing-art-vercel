@@ -12,7 +12,7 @@ const ModelViewer = function(props) {
             <div className={`h-100 w-100`}>
                 <model-viewer
                     src={props.glb}
-                    ios-src={props.usdz}
+                    // ios-src={props.usdz}
                     poster={props.placeholder}
                     loading={'eager'}
                     reveal={'auto'}
