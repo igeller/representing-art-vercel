@@ -4,8 +4,7 @@
   "previous": 3,
   "linkToMaskDetails": "/mask_gallery/mask1",
   "model": {
-    "glb": "https://igeller.github.io/assets/small%20model/untitled.glb",
-    "usdz": "https://igeller.github.io/assets/small%20model/Yoruba_Mask.usdz?raw=true",
+    "glb": "https://igeller.github.io/assets/finalmasks/ejaghamdoublefacedmask/GLBejaghamdoublefacedmask.glb",
     "maskImgSrc": "https://emuseum1.as.miami.edu/internal/media/dispatcher/21/preview"
   },
   "details": {
