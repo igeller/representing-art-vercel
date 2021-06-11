@@ -3,6 +3,8 @@ import Head from "next/head";
 import PropTypes from 'prop-types';
 
 const ModelViewer = function(props) {
+    //http://mail.matrixdubai.com/test/examples/model-formats.html
+    //the above link will show you how to cycle through models and then you can modify to make it work for your models.
     return(
         <div className={`${props.className}`}>
             <Head>
@@ -11,11 +13,12 @@ const ModelViewer = function(props) {
             </Head>
             <div className={`h-100 w-100`}>
                 <model-viewer
+                    model-cache-size={8}
                     src={props.glb}
-                    ios-src={props.usdz}
+                    // ios-src={props.usdz}
                     poster={props.placeholder}
                     loading={'eager'}
-                    reveal={'auto'}
+                    reveal={'interaction'}
                     style={{width: '100%', height: '70vh'}}
                     ar
                     ar-modes="webxr scene-viewer quick-look"
@@ -24,7 +27,6 @@ const ModelViewer = function(props) {
                     camera-controls
                     interaction-prompt={'auto'}
                     interaction-prompt-style={'wiggle'}
-
 
                 />
             </div>

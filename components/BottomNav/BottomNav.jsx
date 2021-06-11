@@ -1,130 +1,183 @@
-import React, {useState} from "react";
+import React, {useRef, useState} from "react";
 import PropTypes from "prop-types";
-import {Button, ButtonGroup} from "react-bootstrap";
 import Link from "next/link";
 import 'mapbox-gl/dist/mapbox-gl.css';
-import MapModal from "../MapModal/MapModal";
-import InfoModal from "../InfoModal/InfoModal";
 import * as styles from './BottomNav.module.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faChevronLeft, faChevronRight, faCompass, faInfoCircle} from "@fortawesome/free-solid-svg-icons";
-
+import {faChevronLeft, faChevronRight, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
+import SlideModal from "../SlideModal/SlideModal";
+import ReactMapboxGl, {Marker} from "react-mapbox-gl";
+import getRefPosition from "../../functions/functions";
+import {Button} from "react-bootstrap";
+import ModelViewer from "../ModelViewer/ModelViewer";
 const ReactFitText = require('react-fittext');
 
 const BottomNav = (props) => {
     // const h = useRef(null);
     const [showMap, setShowMap] = useState(false);
     const [showInfo, setShowInfo] = useState(false);
-    // const [evKey, setEvKey] = useState(false);
-
+    const [showInstructions, setShowInstructions] = useState(false);
+    const navGridRef = useRef(null)
     const [loading, setLoading] = useState(false);
     const [dStyle, setDivStyle] = useState(0)
-    //
-    // React.useEffect(()=>{
-    //     setDivStyle((x)=>{
-    //         console.log(x);
-    //         return x;
-    //     })
-    //
-    // })
-
-
-
-
+    
+    const Map = ReactMapboxGl({
+        accessToken:
+            'pk.eyJ1IjoicmVwcmVzZW50aW5nYXJ0IiwiYSI6ImNrazFrcnVoczBzNHgydXQxOWFyZTkyZWIifQ.tkwUtgPIhfaA0S-qOKjkQw',
+        interactive: false,
+        logoPosition: 'top-right',
+        attributionControl: false
+    });
+    
+    
     return(
+    
 <>
-    {/*{        console.log('eventKey: ', evKey)}*/}
-            <ButtonGroup className={`${props.className} ${styles.menustyle} w-100`} id={`${props.id}`}  id={`infoButton`}>
-
-                <Link href={{ query: { maskNumber: props.previousMask }}}>
-                    <a
-                        className={`btn btn-primary stretched-link ${styles.buttonborder} w-100 mr-1 p-2`}
-                        style={{backgroundColor: `#DA5527`}}
-                    >
-                            <FontAwesomeIcon icon={faChevronLeft} size={`2x`} className={`bg-transparent d-block mx-auto`}/>
-                            <ReactFitText minFontSize={10}>
-                                <div className={`bg-transparent mt-1`}>
-                                    Last Mask
-                                </div>
-                            </ReactFitText>
-                    </a>
-                </Link>
-
-                <Button
-
-                    variant="primary"
-
-                    onClick={() => {
-                        setShowMap(false)
-                        setShowInfo(!showInfo)
-                        setDivStyle(document.getElementById(`infoButton`).getBoundingClientRect().height)
-                    }}
-
-                    className={`${styles.buttonborder} mr-1 p-2 w-100`}
-                    style={{backgroundColor: `#F37424`}}>
-                    <FontAwesomeIcon icon={faInfoCircle} size={`2x`} className={`bg-transparent d-block mx-auto`}/>
+ 
+    <div className={`${styles.navGrid} ${styles.buttonborder} w-100 `} ref={navGridRef}>
+    
+    
+        <Button
+            variant="primary"
+            
+        
+            className={`p-2 w-100`}
+            style={{
+                border: `none`,
+                borderRadius: `0px`,
+                margin: `0px`,
+                backgroundColor: `#DA5527`}}
+        >
+    
+    
+            <Link href={{ query: { maskNumber: props.previousMask }}}>
+                <a
+                    className={``}
+                    style={{
+                        border: `none`,
+                        borderRadius: `0px`,
+                        margin: `0px`,
+                        backgroundColor: `#DA5527`}}
+                >
+                    <FontAwesomeIcon icon={faChevronLeft} className={`bg-transparent d-block mx-auto`}/>
                     <ReactFitText minFontSize={10}>
                         <div className={`bg-transparent mt-1`}>
-                            Info
+                            Previous
                         </div>
                     </ReactFitText>
-                </Button>
-
-
-
-                <Button
-                    variant="primary"
-                    onClick={() => {
-                        setShowInfo(false)
-                        setShowMap(!showMap)
-                        setDivStyle(document.getElementById(`infoButton`).getBoundingClientRect().height)
-                    }}
-                    className={`${styles.buttonborder} mr-1 p-2 w-100`}
-                    style={{backgroundColor: `#A3D7F4`}}>
-                        <FontAwesomeIcon icon={faCompass} size={`2x`} className={`bg-transparent d-block mx-auto`}/>
-                        <ReactFitText minFontSize={10}>
-                            <div className={`bg-transparent mt-1`}>
-                                Map View
-                            </div>
-                        </ReactFitText>
-                </Button>
-
-                <Link href={{ query: { maskNumber: props.previousMask }}}>
-                    <a
-                        className={`btn btn-primary stretched-link ${styles.buttonborder} w-100`}
-                        style={{backgroundColor: `#C0CB2F`}}
-                    >
-                            <FontAwesomeIcon icon={faChevronRight} size={`2x`} className={`bg-transparent d-block mx-auto`}/>
-                            <ReactFitText minFontSize={10}>
-                                <div className={`bg-transparent mt-1`}>
-                                    Next Mask
-                                </div>
-                            </ReactFitText>
-                    </a>
-                </Link>
-            </ButtonGroup>
+                </a>
+            </Link>
             
-            <MapModal
-                height={dStyle > 0 ?dStyle : 0}
-                openMapModal={showMap}
-                closeMapModal={() => setShowMap(!showMap)}
-                bgColor={'#A3D7F4'}
-                mapDetails={props.maskDetails.mapInfo}
-            />
-            <InfoModal
-                height={dStyle > 0 ?dStyle : 0}
-                eventKey="0"
-                openInfoModal={showInfo}
-                bgColor={'#F37424'}
-                closeInfoModal={() => setShowInfo(false)}
-                group={props.maskDetails.group}
-                groupLocation={props.maskDetails.groupLocation}
-                itemName={props.maskDetails.itemName}
-                itemCreation={props.maskDetails.itemCreation}
-                medium={props.maskDetails.medium}
-                description={props.maskDetails.description}
-                providedBy={props.maskDetails.providedBy}
-            />
+        
+            {/*<CurrentIcon  style={ { color: `white !important`, stroke: `white !important`, fill: 'white' +*/}
+            {/*        ' !important' }}/>*/}
+            
+        </Button>
+        
+            
+            
+    
+           
+        
+        <SlideModal
+            btnText={`About`}
+            bgColor={`#F37424`}
+            maskActionBarRef={navGridRef}
+            icon={`GiTribalMask`}
+        >
+            
+                <ReactFitText minFontSize={16} maxFontSize={18}>
+                    <h1 className={'mb-1 font-weight-bold'}>{props.maskDetails.itemName}</h1>
+                </ReactFitText>
+                <ReactFitText minFontSize={16} maxFontSize={18}>
+                    <p className={`mb-4 font-weight-medium`} >{props.maskDetails.groupLocation}</p>
+                </ReactFitText>
+                <ReactFitText minFontSize={16} maxFontSize={18}>
+                    <h1 className={'mb-1 font-weight-bold'}>{props.maskDetails.itemName}</h1>
+                </ReactFitText>
+                <ReactFitText minFontSize={11} maxFontSize={13}>
+                    <p className={`mb-4 font-weight-light`} >{props.maskDetails.itemCreation}</p>
+                </ReactFitText>
+                <ReactFitText minFontSize={11} maxFontSize={13}>
+                    <p className={`mb-4 font-weight-light`} >{props.maskDetails.medium}</p>
+                </ReactFitText>
+                <ReactFitText minFontSize={11} maxFontSize={13}>
+                    <p className={`mb-4 font-weight-light`} >{props.maskDetails.description}</p>
+                </ReactFitText>
+                <ReactFitText minFontSize={11} maxFontSize={13}>
+                    <p className={`mb-4 font-weight-bold font-italic`}>{props.maskDetails.providedBy}</p>
+                </ReactFitText>
+        </SlideModal>
+        
+        <SlideModal
+            btnText={`Instructions`}
+            bgColor={`#0C5230`}
+            maskActionBarRef={navGridRef}
+            icon={`AiFillInfoCircle`}
+        />
+        <SlideModal
+            btnText={`Map`}
+            bgColor={`#A3D7F4`}
+            maskActionBarRef={navGridRef}
+            icon={`FaCompass`}
+        >
+            
+          
+            <div className={`${styles.map}`}>
+                <Map style="mapbox://styles/mapbox/streets-v9"
+                     className={`w-100 ${styles.pos}`}
+                     center={[props.maskDetails.mapInfo.markerLong, props.maskDetails.mapInfo.markerLat]}
+                     zoom={[3.75]}
+                >
+            
+                    <Marker
+                        coordinates={[`${props.maskDetails.mapInfo.markerLong}`, `${props.maskDetails.mapInfo.markerLat}`]}
+                        anchor="bottom"
+                        className={`bg-transparent`}
+                        color={'red'}
+                    >
+                        <FontAwesomeIcon icon={faMapMarkerAlt} size={"3x"} className={`${styles.mapIcon}`}/>
+                    </Marker>
+                </Map>
+            </div>
+            
+            
+        </SlideModal>
+    
+        <Button
+            variant="primary"
+            onClick={ModelViewer.showPoster()}
+        
+            className={`p-2 w-100`}
+            style={{
+                border: `none`,
+                borderRadius: `0px`,
+                margin: `0px`,
+                backgroundColor: `#C0CB2F`}}
+        >
+        
+        
+            <Link href={{ query: { maskNumber: props.nextMask }}}>
+                <a>
+                    <FontAwesomeIcon icon={faChevronRight} className={`bg-transparent d-block mx-auto`}/>
+                    <ReactFitText minFontSize={10}>
+                        <div className={`bg-transparent mt-1`}>
+                            Next
+                        </div>
+                    </ReactFitText>
+                </a>
+            </Link>
+        
+        
+            {/*<CurrentIcon  style={ { color: `white !important`, stroke: `white !important`, fill: 'white' +*/}
+            {/*        ' !important' }}/>*/}
+    
+        </Button>
+    
+        
+    </div>
+    
+   
 
         </>
 
