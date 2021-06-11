@@ -7,7 +7,9 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronLeft, faChevronRight, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
 import SlideModal from "../SlideModal/SlideModal";
 import ReactMapboxGl, {Marker} from "react-mapbox-gl";
-
+import getRefPosition from "../../functions/functions";
+import {Button} from "react-bootstrap";
+import ModelViewer from "../ModelViewer/ModelViewer";
 const ReactFitText = require('react-fittext');
 
 const BottomNav = (props) => {
@@ -33,43 +35,49 @@ const BottomNav = (props) => {
 <>
  
     <div className={`${styles.navGrid} ${styles.buttonborder} w-100 `} ref={navGridRef}>
-        
+    
+    
+        <Button
+            variant="primary"
             
-                <Link href={{ query: { maskNumber: props.previousMask }}}>
-                    <a
-                        className={`btn btn-primary  ${styles.buttonborder} w-100  p-2`}
-                        style={{backgroundColor: `#DA5527`}}
-                    >
-                        <FontAwesomeIcon icon={faChevronLeft} size={`2x`} className={`bg-transparent d-block mx-auto`}/>
-                        <ReactFitText maxFontSize={10}>
-                            <div className={`bg-transparent mt-1`}>
-                                Last Mask
-                            </div>
-                        </ReactFitText>
-                    </a>
-                </Link>
+        
+            className={`p-2 w-100`}
+            style={{
+                border: `none`,
+                borderRadius: `0px`,
+                margin: `0px`,
+                backgroundColor: `#DA5527`}}
+        >
+    
+    
+            <Link href={{ query: { maskNumber: props.previousMask }}}>
+                <a
+                    className={``}
+                    style={{
+                        border: `none`,
+                        borderRadius: `0px`,
+                        margin: `0px`,
+                        backgroundColor: `#DA5527`}}
+                >
+                    <FontAwesomeIcon icon={faChevronLeft} className={`bg-transparent d-block mx-auto`}/>
+                    <ReactFitText minFontSize={10}>
+                        <div className={`bg-transparent mt-1`}>
+                            Previous
+                        </div>
+                    </ReactFitText>
+                </a>
+            </Link>
+            
+        
+            {/*<CurrentIcon  style={ { color: `white !important`, stroke: `white !important`, fill: 'white' +*/}
+            {/*        ' !important' }}/>*/}
+            
+        </Button>
+        
             
             
     
-            {/*<Button*/}
-            
-            {/*    variant="primary"*/}
-            
-            {/*    onClick={() => {*/}
-            {/*        setShowMap(false)*/}
-            {/*        setShowInfo(!showInfo)*/}
-            {/*        setDivStyle(document.getElementById(`infoButton`).getBoundingClientRect().height)*/}
-            {/*    }}*/}
-            
-            {/*    className={`${styles.buttonborder} mr-1 p-2 w-100`}*/}
-            {/*    style={{backgroundColor: `#F37424`}}>*/}
-            {/*    <FontAwesomeIcon icon={faInfoCircle} size={`2x`} className={`bg-transparent d-block mx-auto`}/>*/}
-            {/*    <ReactFitText minFontSize={10}>*/}
-            {/*        <div className={`bg-transparent mt-1`}>*/}
-            {/*            Info*/}
-            {/*        </div>*/}
-            {/*    </ReactFitText>*/}
-            {/*</Button>*/}
+           
         
         <SlideModal
             btnText={`About`}
@@ -114,9 +122,7 @@ const BottomNav = (props) => {
             icon={`FaCompass`}
         >
             
-            {/*<div>*/}
-            {/*    hey wtf is going on??/*/}
-            {/*</div>*/}
+          
             <div className={`${styles.map}`}>
                 <Map style="mapbox://styles/mapbox/streets-v9"
                      className={`w-100 ${styles.pos}`}
@@ -124,7 +130,6 @@ const BottomNav = (props) => {
                      zoom={[3.75]}
                 >
             
-                    {/* Circle example */}
                     <Marker
                         coordinates={[`${props.maskDetails.mapInfo.markerLong}`, `${props.maskDetails.mapInfo.markerLat}`]}
                         anchor="bottom"
@@ -138,86 +143,41 @@ const BottomNav = (props) => {
             
             
         </SlideModal>
-            {/*<Button*/}
     
-            {/*    variant="primary"*/}
-    
-            {/*    onClick={() => {*/}
-            {/*        setShowMap(false)*/}
-            {/*        setShowInfo(false)*/}
-            {/*        setShowInstructions(!showInstructions)*/}
-            {/*        setDivStyle(document.getElementById(`infoButton`).getBoundingClientRect().height)*/}
-            {/*    }}*/}
-    
-            {/*    className={`${styles.buttonborder} mr-1 p-2 w-100`}*/}
-            {/*    style={{backgroundColor: `#0C5230`}}>*/}
-            {/*    <FontAwesomeIcon icon={faQuestionCircle} size={`2x`} className={`bg-transparent d-block mx-auto`}/>*/}
-            {/*    <ReactFitText minFontSize={10}>*/}
-            {/*        <div className={`bg-transparent mt-1`}>*/}
-            {/*            Instructions*/}
-            {/*        </div>*/}
-            {/*    </ReactFitText>*/}
-            {/*</Button>*/}
-    
-    
-            {/*<Button*/}
-            {/*    variant="primary"*/}
-            {/*    onClick={() => {*/}
-            {/*        setShowInfo(false)*/}
-            {/*        setShowMap(!showMap)*/}
-            {/*        setDivStyle(document.getElementById(`infoButton`).getBoundingClientRect().height)*/}
-            {/*    }}*/}
-            {/*    className={`${styles.buttonborder} mr-1 p-2 w-100`}*/}
-            {/*    style={{backgroundColor: `#A3D7F4`}}>*/}
-            {/*    <FontAwesomeIcon icon={faCompass} size={`2x`} className={`bg-transparent d-block mx-auto`}/>*/}
-            {/*    <ReactFitText minFontSize={10}>*/}
-            {/*        <div className={`bg-transparent mt-1`}>*/}
-            {/*            Map View*/}
-            {/*        </div>*/}
-            {/*    </ReactFitText>*/}
-            {/*</Button>*/}
-    
-            <Link href={{ query: { maskNumber: props.previousMask }}}>
-                <a
-                    className={`btn btn-primary ${styles.buttonborder} w-100`}
-                    style={{backgroundColor: `#C0CB2F`}}
-                >
-                    <FontAwesomeIcon icon={faChevronRight} size={`2x`} className={`bg-transparent d-block mx-auto`}/>
+        <Button
+            variant="primary"
+            onClick={ModelViewer.showPoster()}
+        
+            className={`p-2 w-100`}
+            style={{
+                border: `none`,
+                borderRadius: `0px`,
+                margin: `0px`,
+                backgroundColor: `#C0CB2F`}}
+        >
+        
+        
+            <Link href={{ query: { maskNumber: props.nextMask }}}>
+                <a>
+                    <FontAwesomeIcon icon={faChevronRight} className={`bg-transparent d-block mx-auto`}/>
                     <ReactFitText minFontSize={10}>
                         <div className={`bg-transparent mt-1`}>
-                            Next Mask
+                            Next
                         </div>
                     </ReactFitText>
                 </a>
             </Link>
+        
+        
+            {/*<CurrentIcon  style={ { color: `white !important`, stroke: `white !important`, fill: 'white' +*/}
+            {/*        ' !important' }}/>*/}
+    
+        </Button>
+    
+        
     </div>
     
-    {/*<div className={`w-100 row-col`} id={`${props.id}`}  id={`infoButton`}>*/}
-    
-    
-    {/*        </div>*/}
-            
-            {/*<MapModal*/}
-            {/*    height={dStyle > 0 ?dStyle : 0}*/}
-            {/*    openMapModal={showMap}*/}
-            {/*    closeMapModal={() => setShowMap(!showMap)}*/}
-            {/*    bgColor={'#A3D7F4'}*/}
-            {/*    mapDetails={props.maskDetails.mapInfo}*/}
-            {/*/>*/}
-            {/*<InfoModal*/}
-            {/*    height={dStyle > 0 ?dStyle : 0}*/}
-            {/*    eventKey="0"*/}
-            {/*    openInfoModal={showInfo}*/}
-            {/*    bgColor={'#F37424'}*/}
-            {/*    closeInfoModal={() => setShowInfo(false)}*/}
-            {/*    group={props.maskDetails.group}*/}
-            {/*    groupLocation={props.maskDetails.groupLocation}*/}
-            {/*    itemName={props.maskDetails.itemName}*/}
-            {/*    itemCreation={props.maskDetails.itemCreation}*/}
-            {/*    medium={props.maskDetails.medium}*/}
-            {/*    description={props.maskDetails.description}*/}
-            {/*    providedBy={props.maskDetails.providedBy}*/}
-            {/*/>*/}
+   
 
         </>
 

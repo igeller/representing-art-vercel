@@ -99,7 +99,6 @@ const  SlideModal =  (props) => {
 			
 			
 			{/*below is the modal*/}
-			{/*{modalContent}*/}
 			<div
 			className={`w-100 p-3 ${styles.modalContent}`}
 			ref={node}
