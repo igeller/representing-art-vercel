@@ -16,12 +16,18 @@ export default function Home() {
 
 
         <div className={`text-center h-100 gridHolder mx-auto`}>
-                <TopBanner className={`topOfGrid mb-1`} id={'t1'}/>
+                <TopBanner className={`topOfGrid mt-5 mb-1`} id={'t1'}/>
 
-
+            {/*add normal space above top banner
+                - move the lowe and mellon images inline below banner
+                - add that weird mask image
+                - make buttons uniform size and squared
+            */}
+            
+    
             <div className={`middleOfGrid align-self-center`} id={'bodyDiv'}>
-
                 <img className={'loweLogo w-50 mx-auto'} src={`${loweImage}`}/>
+                <img className={'mellonLogo position-relative w-50 pt-5 mx-auto align-self-end'} src={`${mellonImage}`}/>
 
                 <ReactFitText minFontSize={25} compressor={1.25}>
                     <h1 className={`mt-5 pt-5 ${styles.title}`}>
@@ -79,7 +85,6 @@ export default function Home() {
                 </a>
                
                 
-                <img className={'mellonLogo position-relative w-50 pt-5 mx-auto align-self-end'} src={`${mellonImage}`}/>
                 <div id={`instructions`} className={`text-left mb-5`}>
                     <ReactFitText maxFontSize={15} compressor={1.25}>
                         <h1 className={`px-5`}> Instructions </h1>
