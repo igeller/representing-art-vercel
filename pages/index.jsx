@@ -11,112 +11,121 @@ let mellonImage = 'https://igeller.github.io/assets/Assets/Mobile/Logos/Africa-M
 
 
 export default function Home() {
-
+    let contentSectionTitleMaxFontSize = 20;
+    let contentSectionBodyMaxFontSize = 12;
+    
     return (
-
-
+        
+        
         <div className={`text-center h-100 gridHolder mx-auto`}>
-                <TopBanner className={`topOfGrid mt-5 mb-1`} id={'t1'}/>
-
+            <TopBanner className={`topOfGrid mt-5 mb-1`} id={'t1'}/>
+            
             {/*add normal space above top banner
                 - move the lowe and mellon images inline below banner
                 - add that weird mask image
                 - make buttons uniform size and squared
             */}
             
-    
-            <div className={`middleOfGrid align-self-center`} id={'bodyDiv'}>
-                <img className={'loweLogo w-50 mx-auto'} src={`${loweImage}`}/>
-                <img className={'mellonLogo position-relative w-50 pt-5 mx-auto align-self-end'} src={`${mellonImage}`}/>
+            
+            <div className={`middleOfGrid h-100 align-self-center`} id={'bodyDiv'}>
+                {/*<div id={`section1`} className={`${styles*/}
+                {/*    .section1}`}>*/}
+                <div className={`${styles.grd} `}>
+                    <div id={`organizationImgs`} className={`${styles.organizationImgs} mw-100 mx-5 mt-3`}>
+                        <img className={`${styles.img}`} src={`${loweImage}`}/>
+                        <img className={`${styles.img}`} src={`${mellonImage}`}/>
+                    </div>
+                    
+                    <div id={`titleSection`} className={`${styles.titleSection} mt-2`}>
+                        <img src={"https://igeller.github.io/assets/NewAssetss/Homepage/represent-home-mask.png"}/>
+                        <ReactFitText minFontSize={25} compressor={1.25}>
+                            <h1 className={`${styles.centerText}`}>
+                                RePresenting ART
+                            </h1>
+                        </ReactFitText>
+                    </div>
+                    
+                    <p className={'mx-auto my-3 font-italic'}>
+                        An augmented reality view into the<br/>
+                        Lowe Art of Africa Gallery Collections
+                    </p>
+                    
+                    <div id={`homepgButtons`} className={`${styles.homepageButtons} mx-5 mb-3`}>
+                        
+                        
+                        <Link href={`#about`}>
+                            <Button className={`${styles.btn}  text-wrap btn-lg w-100`}>
+                                <ReactFitText minFontSize={10} maxFontSize={12} compressor={1.25}>
+                                    <p className={`my-1`}>ABOUT</p>
+                                </ReactFitText>
+                            </Button>
+                        </Link>
+                        
+                        <Link href={`#instructions`}>
+                            <Button className={`${styles.btn}  text-wrap btn-lg w-100`}>
+                                <ReactFitText minFontSize={10} maxFontSize={12} compressor={1.25}>
+                                    <p className={`my-1`}>INSTRUCTIONS</p>
+                                </ReactFitText>
+                            </Button>
+                        </Link>
+                        
+                        <Link href={'mask_gallery/'}>
+                            <Button className={`${styles.btn}  text-wrap btn-lg w-100`}>
+                                <ReactFitText minFontSize={10} maxFontSize={12} compressor={1.25}>
+                                    <p className={`my-1`}>GALLERY</p>
+                                </ReactFitText>
+                            </Button>
+                        </Link>
+                    
+                    </div>
 
-                <ReactFitText minFontSize={25} compressor={1.25}>
-                    <h1 className={`mt-5 pt-5 ${styles.title}`}>
-                        REPRESENTING ART
-                    </h1>
-                </ReactFitText>
-                <p className={'mx-auto my-3 font-italic'}>
-                    A Holographic Installation<br/>
-                    for the Lowe Art of<br/>
-                    Africa Gallery Collections
-                </p>
-                <Link href={'mask_gallery/'}>
-                    <Button className={`${styles.btn} mt-5 text-wrap badge-pill btn-lg mx-auto py-2 w-auto`}>
-                        <ReactFitText minFontSize={15} compressor={1.25}>
-                            <div className={`px-5`}> View Gallery
-                            </div>
-                        </ReactFitText>
-                    </Button>
-                </Link>
+                    <BottomBanner className={` mt-1 mb-0`} id={'b1'}/>
+                    {/*</div>*/}
+                    
+                    
+                    
+                    
+                    <div id={`contentSections`}>
+                        <div id={`about`} className={`text-left my-3 min-vh-100`}>
+                            <ReactFitText maxFontSize={contentSectionTitleMaxFontSize} compressor={1.25}>
+                                <h1 className={`px-5`}> About </h1>
+                            </ReactFitText>
+                            <ReactFitText maxFontSize={contentSectionBodyMaxFontSize} compressor={1.25}>
+                                <p className={`px-5`}> Lorem ipsume asdfjhaskdfhasodfha</p>
+                            </ReactFitText>
     
-                <a
-                    href={`#instructions`}
-                    style={{scrollPadding: `40px`}}
-                >
-                    <Button className={`${styles.btn} mt-4 text-wrap badge-pill btn-lg mx-auto py-2 w-auto`}>
-                        <ReactFitText minFontSize={15} compressor={1.25}>
-                            <div className={`px-5`}> Instructions
-                            </div>
-                        </ReactFitText>
-                    </Button>
-                </a>
-    
-                <a
-                    href={`#about`}
-                    style={{scrollPadding: `40px`}}
-                >
-                    <Button className={`${styles.btn} mt-4 text-wrap badge-pill btn-lg mx-auto py-2 w-auto`}>
-                        <ReactFitText minFontSize={15} compressor={1.25}>
-                            <div className={`px-5`}> About
-                            </div>
-                        </ReactFitText>
-                    </Button>
-                </a>
-    
-                <a
-                    href={`#education`}
-                    style={{scrollPadding: `40px`}}
-                >
-                    <Button className={`${styles.btn} mt-4 text-wrap badge-pill btn-lg mx-auto py-2 w-auto`}>
-                        <ReactFitText minFontSize={15} compressor={1.25}>
-                            <div className={`px-5`}> Education
-                            </div>
-                        </ReactFitText>
-                    </Button>
-                </a>
-               
-                
-                <div id={`instructions`} className={`text-left mb-5`}>
-                    <ReactFitText maxFontSize={15} compressor={1.25}>
-                        <h1 className={`px-5`}> Instructions </h1>
-                    </ReactFitText>
-                    <ReactFitText maxFontSize={12} compressor={1.25}>
-                        <p className={`px-5`}> Lorem ipsume asdfjhaskdfhasodfha</p>
-                    </ReactFitText>
-                </div>
-    
-                <div id={`about`} className={`text-left my-5`}>
-                    <ReactFitText maxFontSize={15} compressor={1.25}>
-                        <h1 className={`px-5`}> About </h1>
-                    </ReactFitText>
-                    <ReactFitText maxFontSize={12} compressor={1.25}>
-                        <p className={`px-5`}> Lorem ipsume asdfjhaskdfhasodfha</p>
-                    </ReactFitText>
-                </div>
-                <div id={`education`} className={`text-left mt-5`}>
-                    <ReactFitText maxFontSize={15} compressor={1.25}>
-                        <h1 className={`px-5`}> Education </h1>
-                    </ReactFitText>
-                    <ReactFitText maxFontSize={12} compressor={1.25}>
-                        <p className={`px-5`}> Lorem ipsume asdfjhaskdfhasodfha</p>
-                    </ReactFitText>
-                </div>
+                            <ReactFitText maxFontSize={contentSectionTitleMaxFontSize} compressor={1.25}>
+                                <h1 className={`px-5`}> Team </h1>
+                            </ReactFitText>
+                            <ReactFitText maxFontSize={contentSectionBodyMaxFontSize} compressor={1.25}>
+                                <p className={`px-5`}> Lorem ipsume asdfjhaskdfhasodfha</p>
+                            </ReactFitText>
+                            
+                        </div>
+                        <BottomBanner className={`bottomOfGrid mt-1 mb-0`} id={'b1'}/>
+                        
+                        <div id={`instructions`} className={`text-left mb-5 min-vh-100`}>
+                            <ReactFitText maxFontSize={contentSectionTitleMaxFontSize} compressor={1.25}>
+                                <h1 className={`px-5`}> Instructions </h1>
+                            </ReactFitText>
+                            <ReactFitText maxFontSize={contentSectionBodyMaxFontSize} compressor={1.25}>
+                                <p className={`px-5`}> Lorem ipsume asdfjhaskdfhasodfha</p>
+                            </ReactFitText>
+                        </div>
+                       
+                        
+                    </div>
+                    </div>
+                    
+            
+            
             </div>
-            <BottomBanner className={`bottomOfGrid mt-1`} id={'b1'}/>
+            {/*<BottomBanner className={`bottomOfGrid mt-1 mb-0`} id={'b1'}/>*/}
         </div>
-
-
-
-
-
+    
+    
+    
+    
+    
     )
 }

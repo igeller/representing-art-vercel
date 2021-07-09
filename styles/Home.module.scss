@@ -3,47 +3,56 @@
   .btn {
     background-color: transparent !important;
     border-color: white;
-    border-width: 6px;
+    border-width: 2px;
     font-weight: bold;
   }
 
+ .organizationImgs{
+   display: inline-grid;
+   grid-auto-flow: column;
+   align-items: center;
+   
+   .img{
+     margin: 0px;
+   }
+ }
+ 
 .title{
   font-weight: bold;
 }
 
-.bodyOvrflw{
-  overflow: scroll;
-  grid-row: auto/ span 28;
-  min-height: 0px;
 
-}
+  .titleSection{
+    position: relative;
+  
+    .centerText{
+      width: 100vw;
+      background-color: transparent;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+ 
+  
+  .homepageButtons{
+    display: grid !important;
+    grid-gap: 1vh;
+  }
 
-.test{
-  display: grid !important;
-  grid-auto-rows: 1fr;
 
-  //grid-template-rows: minmax(auto, 1fr);
-  max-height: 100vh !important;
-  min-height: 100vh !important;
-
-}
-
-.grt{
-  grid-row: 1 / 1;
-}
-
-
-.grm{
-
-}
-.grb{
-  grid-row: 30 / 30;
-}
-
-//@media (max-width: 600px) {
-//  .grid {
-//    width: 100%;
-//    flex-direction: column;
-//  }
+//.bodyOvrflw{
+//  overflow: scroll;
+//  grid-row: auto/ span 28;
+//  min-height: 0px;
 //
 //}
+.grd{
+  display: inline-grid;
+}
+.sectionDiv{
+  display: grid;
+  grid-template-rows: 1fr;
+  //background-color: green !important;
+}
