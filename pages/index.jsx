@@ -19,13 +19,7 @@ export default function Home() {
         
         <div className={`text-center h-100 gridHolder mx-auto`}>
             <TopBanner className={`topOfGrid mt-5 mb-1`} id={'t1'}/>
-            
-            {/*add normal space above top banner
-                - move the lowe and mellon images inline below banner
-                - add that weird mask image
-                - make buttons uniform size and squared
-            */}
-            
+
             
             <div className={`middleOfGrid h-100 align-self-center`} id={'bodyDiv'}>
                 {/*<div id={`section1`} className={`${styles*/}
@@ -79,8 +73,7 @@ export default function Home() {
                     
                     </div>
 
-                    <BottomBanner className={` mt-1 mb-0`} id={'b1'}/>
-                    {/*</div>*/}
+                    <BottomBanner className={`mt-1 mb-0`} id={'b1'}/>
                     
                     
                     
@@ -102,7 +95,7 @@ export default function Home() {
                             </ReactFitText>
                             
                         </div>
-                        <BottomBanner className={`bottomOfGrid mt-1 mb-0`} id={'b1'}/>
+                        <BottomBanner className={`mt-1 mb-0`} id={'b1'}/>
                         
                         <div id={`instructions`} className={`text-left mb-5 min-vh-100`}>
                             <ReactFitText maxFontSize={contentSectionTitleMaxFontSize} compressor={1.25}>
