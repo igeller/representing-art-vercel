@@ -146,7 +146,7 @@ const BottomNav = (props) => {
     
         <Button
             variant="primary"
-            onClick={ModelViewer.showPoster()}
+            // onClick={ModelViewer.showPoster()}
         
             className={`p-2 w-100`}
             style={{

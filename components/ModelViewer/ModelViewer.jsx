@@ -3,7 +3,7 @@ import Head from "next/head";
 import PropTypes from 'prop-types';
 
 const ModelViewer = function(props) {
-git    //the above link will show you how to cycle through models and then you can modify to make it work for your
+    //the above link will show you how to cycle through models and then you can modify to make it work for your
 // models.
     return(
         <div className={`${props.className}`}>
