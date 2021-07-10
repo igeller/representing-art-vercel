@@ -14,3 +14,10 @@
   //position: absolute;
   overflow-y: scroll;
 }
+
+.navGrid{
+  width: 100%;
+  display: inline-grid;
+  grid-auto-flow: column;
+  justify-items: center;
+}
