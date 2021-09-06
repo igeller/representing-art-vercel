@@ -5,6 +5,7 @@
     border-color: white;
     border-width: 2px;
     font-weight: bold;
+    //background-color: chartreuse !important;
   }
 
  .organizationImgs{
@@ -36,10 +37,11 @@
   }
  
   
-  .homepageButtons{
-    display: grid !important;
-    grid-gap: 1vh;
-  }
+  //.homepageButtons{
+  //  display: grid !important;
+  //  grid-gap: 1vh;
+  //  column-span: 3;
+  //}
 
 
 //.bodyOvrflw{
@@ -54,5 +56,5 @@
 .sectionDiv{
   display: grid;
   grid-template-rows: 1fr;
-  //background-color: green !important;
+  //color: green !important;
 }

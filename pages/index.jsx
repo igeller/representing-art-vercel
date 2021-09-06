@@ -43,20 +43,22 @@ export default function Home() {
                         An augmented reality view into the<br/>
                         Lowe Art of Africa Gallery Collections
                     </p>
-                    
-                    <div id={`homepgButtons`} className={`${styles.homepageButtons} mx-5 mb-3`}>
-                        
-                        
-                        <Link href={`#about`}>
-                            <Button className={`${styles.btn}  text-wrap btn-lg w-100`}>
-                                <ReactFitText minFontSize={10} maxFontSize={12} compressor={1.25}>
-                                    <p className={`my-1`}>ABOUT</p>
-                                </ReactFitText>
-                            </Button>
+    
+                
+                    <div id={`homepgButtons`} className={`container`}>
+                        <span className={`row row-cols-1 mx-0`}>
+                             <Link href={`#about`}>
+                                <Button className={`${styles.btn} text-wrap col-8 mb-3`}>
+                                    <ReactFitText minFontSize={10} maxFontSize={12} compressor={1.25}>
+                                        <p className={`my-1`}>ABOUT</p>
+                                    </ReactFitText>
+                                </Button>
+                            
                         </Link>
                         
                         <Link href={`#instructions`}>
-                            <Button className={`${styles.btn}  text-wrap btn-lg w-100`}>
+                           
+                            <Button className={`${styles.btn} text-wrap col-8 mb-3`}>
                                 <ReactFitText minFontSize={10} maxFontSize={12} compressor={1.25}>
                                     <p className={`my-1`}>INSTRUCTIONS</p>
                                 </ReactFitText>
@@ -64,12 +66,15 @@ export default function Home() {
                         </Link>
                         
                         <Link href={'mask_gallery/'}>
-                            <Button className={`${styles.btn}  text-wrap btn-lg w-100`}>
+                            <Button className={`${styles.btn} text-wrap col-8 mb-3`}>
                                 <ReactFitText minFontSize={10} maxFontSize={12} compressor={1.25}>
                                     <p className={`my-1`}>GALLERY</p>
                                 </ReactFitText>
                             </Button>
                         </Link>
+                        </span>
+                       
+                       
                     
                     </div>
 
