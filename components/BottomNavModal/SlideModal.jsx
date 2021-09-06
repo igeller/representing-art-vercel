@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import getRefPosition from "../../functions/functions";
 import * as ReactIcons from 'react-icons/all.d.ts'
 import styles from './SlideModal.module.scss'
+import BottomBanner from "../BottomBanner/BottomBanner";
 const ReactFitText = require('react-fittext')
 
 
@@ -84,8 +85,7 @@ const  SlideModal =  (props) => {
 					margin: `0px`
 				}}>
 				
-					<CurrentIcon  style={ { color: `white !important`, stroke: `white !important`, fill: 'white' +
-							' !important' }}/>
+					<CurrentIcon  style={ { color: `white !important`, stroke: `white !important`, fill: `white !important`}}/>
 				
 				
 				<ReactFitText minFontSize={10}>
@@ -100,7 +100,7 @@ const  SlideModal =  (props) => {
 			
 			{/*below is the modal*/}
 			<div
-			className={`w-100 p-3 ${styles.modalContent}`}
+			className={`w-100 ${styles.modalContent}`}
 			ref={node}
 			style={{
 				position: `absolute`,
@@ -113,7 +113,10 @@ const  SlideModal =  (props) => {
 				setShowModal(!showModal)
 			}}
 		>
-				<div className={`p-3 h-100 text-left ${styles.modalContentText}`}>
+				<BottomBanner className={``}/>
+				
+				<div className={`p-3 m-3 h-100 text-left ${styles.modalContentText}`}>
+					
 					{modalContent}
 				</div>
 		</div>

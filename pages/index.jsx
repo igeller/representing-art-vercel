@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.scss'
 import Button from "react-bootstrap/Button";
 import Link from 'next/link';
-import TopBanner from "../components/TopBanner/TopBanner";
+import TopBanner from "../components/TopNavDecorativeBanner/TopBanner";
 import BottomBanner from "../components/BottomBanner/BottomBanner";
 const ReactFitText = require('react-fittext');
 

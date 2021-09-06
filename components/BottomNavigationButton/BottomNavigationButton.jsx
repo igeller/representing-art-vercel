@@ -3,7 +3,7 @@ import {Button} from "react-bootstrap";
 import PropTypes from "prop-types";
 import getRefPosition from "../../functions/functions";
 import * as ReactIcons from 'react-icons/all.d.ts'
-import styles from './SlideModal.module.scss'
+import styles from './BottomNavModal.module.scss'
 const ReactFitText = require('react-fittext')
 
 

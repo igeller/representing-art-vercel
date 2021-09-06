@@ -5,11 +5,12 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import * as styles from './BottomNav.module.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronLeft, faChevronRight, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
-import SlideModal from "../SlideModal/SlideModal";
+import SlideModal from "../BottomNavModal/SlideModal";
 import ReactMapboxGl, {Marker} from "react-mapbox-gl";
 import getRefPosition from "../../functions/functions";
 import {Button} from "react-bootstrap";
 import ModelViewer from "../ModelViewer/ModelViewer";
+import BottomBanner from "../BottomBanner/BottomBanner";
 const ReactFitText = require('react-fittext');
 
 const BottomNav = (props) => {
@@ -79,45 +80,10 @@ const BottomNav = (props) => {
     
            
         
-        <SlideModal
-            btnText={`About`}
-            bgColor={`#F37424`}
-            maskActionBarRef={navGridRef}
-            icon={`GiTribalMask`}
-        >
-            
-                <ReactFitText minFontSize={16} maxFontSize={18}>
-                    <h1 className={'mb-1 font-weight-bold'}>{props.maskDetails.itemName}</h1>
-                </ReactFitText>
-                <ReactFitText minFontSize={16} maxFontSize={18}>
-                    <p className={`mb-4 font-weight-medium`} >{props.maskDetails.groupLocation}</p>
-                </ReactFitText>
-                <ReactFitText minFontSize={16} maxFontSize={18}>
-                    <h1 className={'mb-1 font-weight-bold'}>{props.maskDetails.itemName}</h1>
-                </ReactFitText>
-                <ReactFitText minFontSize={11} maxFontSize={13}>
-                    <p className={`mb-4 font-weight-light`} >{props.maskDetails.itemCreation}</p>
-                </ReactFitText>
-                <ReactFitText minFontSize={11} maxFontSize={13}>
-                    <p className={`mb-4 font-weight-light`} >{props.maskDetails.medium}</p>
-                </ReactFitText>
-                <ReactFitText minFontSize={11} maxFontSize={13}>
-                    <p className={`mb-4 font-weight-light`} >{props.maskDetails.description}</p>
-                </ReactFitText>
-                <ReactFitText minFontSize={11} maxFontSize={13}>
-                    <p className={`mb-4 font-weight-bold font-italic`}>{props.maskDetails.providedBy}</p>
-                </ReactFitText>
-        </SlideModal>
-        
-        <SlideModal
-            btnText={`Instructions`}
-            bgColor={`#0C5230`}
-            maskActionBarRef={navGridRef}
-            icon={`AiFillInfoCircle`}
-        />
+       
         <SlideModal
             btnText={`Map`}
-            bgColor={`#A3D7F4`}
+            bgColor={`#F37424`}
             maskActionBarRef={navGridRef}
             icon={`FaCompass`}
         >
@@ -143,6 +109,42 @@ const BottomNav = (props) => {
             
             
         </SlideModal>
+    
+        <SlideModal
+            btnText={`About`}
+            bgColor={`#0C5230`}
+            maskActionBarRef={navGridRef}
+            icon={`GiTribalMask`}
+        >
+            <ReactFitText minFontSize={16} maxFontSize={18}>
+                <h1 className={'mb-1 font-weight-bold'}>{props.maskDetails.itemName}</h1>
+            </ReactFitText>
+            <ReactFitText minFontSize={16} maxFontSize={18}>
+                <p className={`mb-4 font-weight-medium`} >{props.maskDetails.groupLocation}</p>
+            </ReactFitText>
+            <ReactFitText minFontSize={16} maxFontSize={18}>
+                <h1 className={'mb-1 font-weight-bold'}>{props.maskDetails.itemName}</h1>
+            </ReactFitText>
+            <ReactFitText minFontSize={11} maxFontSize={13}>
+                <p className={`mb-4 font-weight-light`} >{props.maskDetails.itemCreation}</p>
+            </ReactFitText>
+            <ReactFitText minFontSize={11} maxFontSize={13}>
+                <p className={`mb-4 font-weight-light`} >{props.maskDetails.medium}</p>
+            </ReactFitText>
+            <ReactFitText minFontSize={11} maxFontSize={13}>
+                <p className={`mb-4 font-weight-light`} >{props.maskDetails.description}</p>
+            </ReactFitText>
+            <ReactFitText minFontSize={11} maxFontSize={13}>
+                <p className={`mb-4 font-weight-bold font-italic`}>{props.maskDetails.providedBy}</p>
+            </ReactFitText>
+        </SlideModal>
+    
+        <SlideModal
+            btnText={`Instructions`}
+            bgColor={`#A3D7F4`}
+            maskActionBarRef={navGridRef}
+            icon={`AiFillInfoCircle`}
+        />
     
         <Button
             variant="primary"
