@@ -3,8 +3,8 @@ import Head from "next/head";
 import PropTypes from 'prop-types';
 
 const ModelViewer = function(props) {
-    //http://mail.matrixdubai.com/test/examples/model-formats.html
-    //the above link will show you how to cycle through models and then you can modify to make it work for your models.
+    //the above link will show you how to cycle through models and then you can modify to make it work for your
+// models.
     return(
         <div className={`${props.className}`}>
             <Head>

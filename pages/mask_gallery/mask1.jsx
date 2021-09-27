@@ -1,6 +1,6 @@
 import MaskInfoView from "../../components/MaskInfoView/MaskInfoView";
 import maskSpecs from "../../constants/mask_specs";
-import TopNavBar from "../../components/TopNavBar/TopNavBar";
+import TopNavigation from "../../components/TopNavigation/TopNavigation";
 import React from "react";
 import BottomNav from "../../components/BottomNav/BottomNav";
 
@@ -8,7 +8,7 @@ export default function mask1(props) {
 
     return (
         <div className={`gridHolder`}>
-            <TopNavBar className={'topOfGrid mb-1'} backLink={'./'} id={'t1'}/>
+            <TopNavigation className={'topOfGrid mb-1'} backLink={'./'} id={'t1'} navVersion={"detail"}/>
 
             <MaskInfoView maskOBJ={maskSpecs[props.maskNumber]} className={`middleOfGrid align-self-center mx-auto`} id={'bodyDiv'}/>
             <BottomNav

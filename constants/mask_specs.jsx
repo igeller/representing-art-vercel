@@ -57,10 +57,10 @@ const masks = [
             description: m2.details.description,
             providedBy: m2.details.providedBy,
             mapInfo: {
-                centerMapLong: m1.map.centerMapLat,
-                centerMapLat: m1.map.centerMapLat,
-                markerLong: m1.map.markerLong,
-                markerLat: m1.map.markerLat
+                centerMapLong: m2.map.centerMapLat,
+                centerMapLat: m2.map.centerMapLat,
+                markerLong: m2.map.markerLong,
+                markerLat: m2.map.markerLat
             }
         }
     },
@@ -84,10 +84,10 @@ const masks = [
             description: m3.details.description,
             providedBy: m3.details.providedBy,
             mapInfo: {
-                centerMapLong: m1.map.centerMapLat,
-                centerMapLat: m1.map.centerMapLat,
-                markerLong: m1.map.markerLong,
-                markerLat: m1.map.markerLat
+                centerMapLong: m3.map.centerMapLat,
+                centerMapLat: m3.map.centerMapLat,
+                markerLong: m3.map.markerLong,
+                markerLat: m3.map.markerLat
             }
         }
     },
@@ -111,10 +111,10 @@ const masks = [
             description: m4.details.description,
             providedBy: m4.details.providedBy,
             mapInfo: {
-                centerMapLong: m1.map.centerMapLat,
-                centerMapLat: m1.map.centerMapLat,
-                markerLong: m1.map.markerLong,
-                markerLat: m1.map.markerLat
+                centerMapLong: m4.map.centerMapLat,
+                centerMapLat: m4.map.centerMapLat,
+                markerLong: m4.map.markerLong,
+                markerLat: m4.map.markerLat
             }
         }
     },
@@ -138,10 +138,10 @@ const masks = [
             description: m5.details.description,
             providedBy: m5.details.providedBy,
             mapInfo: {
-                centerMapLong: m1.map.centerMapLat,
-                centerMapLat: m1.map.centerMapLat,
-                markerLong: m1.map.markerLong,
-                markerLat: m1.map.markerLat
+                centerMapLong: m5.map.centerMapLat,
+                centerMapLat: m5.map.centerMapLat,
+                markerLong: m5.map.markerLong,
+                markerLat: m5.map.markerLat
             }
         }
     },
@@ -165,10 +165,10 @@ const masks = [
             description: m6.details.description,
             providedBy: m6.details.providedBy,
             mapInfo: {
-                centerMapLong: m1.map.centerMapLat,
-                centerMapLat: m1.map.centerMapLat,
-                markerLong: m1.map.markerLong,
-                markerLat: m1.map.markerLat
+                centerMapLong: m6.map.centerMapLat,
+                centerMapLat: m6.map.centerMapLat,
+                markerLong: m6.map.markerLong,
+                markerLat: m6.map.markerLat
             }
         }
     },
@@ -192,10 +192,10 @@ const masks = [
             description: m7.details.description,
             providedBy: m7.details.providedBy,
             mapInfo: {
-                centerMapLong: m1.map.centerMapLat,
-                centerMapLat: m1.map.centerMapLat,
-                markerLong: m1.map.markerLong,
-                markerLat: m1.map.markerLat
+                centerMapLong: m7.map.centerMapLat,
+                centerMapLat: m7.map.centerMapLat,
+                markerLong: m7.map.markerLong,
+                markerLat: m7.map.markerLat
             }
         }
     },
@@ -219,10 +219,10 @@ const masks = [
             description: m8.details.description,
             providedBy: m8.details.providedBy,
             mapInfo: {
-                centerMapLong: m1.map.centerMapLat,
-                centerMapLat: m1.map.centerMapLat,
-                markerLong: m1.map.markerLong,
-                markerLat: m1.map.markerLat
+                centerMapLong: m8.map.centerMapLat,
+                centerMapLat: m8.map.centerMapLat,
+                markerLong: m8.map.markerLong,
+                markerLat: m8.map.markerLat
             }
         }
     }
